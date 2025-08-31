@@ -16,7 +16,7 @@ const translations = {
         featuredLabel: "Visualizaciones",
         audienceTitle: "Mi Audiencia",
         audienceDemographics: "Demografía",
-        audienceAge: "<strong>Edad:</strong> 18 - 35 años",
+        audienceAge: "<strong>Edad:</strong> 18 - 55 años",
         audienceGender: "<strong>Género:</strong> 55% Femenino, 45% Masculino",
         audienceCountries: "<strong>Países Principales:</strong> México, Colombia, Argentina, Chile, España",
         audienceInterests: "Intereses",
