@@ -10,7 +10,8 @@ const CONFIG = {
     // Social Media Statistics (update these regularly)
     stats: {
         instagram: '+208K',
-        tiktok: '+150K',
+        tiktok: '+72.5K',
+        facebook: '+106K',
         community: '+400K',
         reach: '+3.5M'
     },
