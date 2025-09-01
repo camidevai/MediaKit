@@ -33,18 +33,61 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial language
     setLanguage('es');
 
-    // Scroll animations
+    // Enhanced scroll animations
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+                // Add staggered delay for multiple elements
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 100);
             }
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.fade-in').forEach(el => {
+    // Observe different animation types
+    document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in').forEach(el => {
         observer.observe(el);
     });
+
+    // Add counter animation for statistics
+    const animateCounters = () => {
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+            const target = counter.textContent;
+            const numericValue = parseInt(target.replace(/[^\d]/g, ''));
+            const suffix = target.replace(/[\d.]/g, '');
+
+            if (numericValue) {
+                let current = 0;
+                const increment = numericValue / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= numericValue) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + suffix;
+                    }
+                }, 30);
+            }
+        });
+    };
+
+    // Trigger counter animation when stats section is visible
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                statsObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const statsSection = document.getElementById('stats');
+    if (statsSection) {
+        statsObserver.observe(statsSection);
+    }
 
     // Contact form functionality
     const contactForm = document.getElementById('contact-form');
