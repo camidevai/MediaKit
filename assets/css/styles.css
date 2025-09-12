@@ -460,6 +460,18 @@ body::before {
     color: #a0a0a0;
 }
 
+.featured-date {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background: rgba(159, 122, 234, 0.1);
+    border-radius: 12px;
+    display: inline-block;
+    border: 1px solid rgba(159, 122, 234, 0.3);
+}
+
 /* --- Estadísticas y Audiencia --- */
 .stats-grid {
     display: grid;

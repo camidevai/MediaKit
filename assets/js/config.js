@@ -35,6 +35,22 @@ const CONFIG = {
             image: 'https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.58.19_af30cf12.md.jpg',
             views: '1.4M',
             alt: 'Captura de video viral de Cami con 1.4M de vistas'
+        },
+        {
+            url: 'https://www.instagram.com/share/_69xybLR8',
+            image: 'https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.14.36_1c67afe5.jpg',
+            views: '1.1M',
+            alt: 'Nuevo video viral de Cami publicado el 3 de septiembre',
+            publishDate: '2025-09-03',
+            dateLabel: 'Septiembre 2025'
+        },
+        {
+            url: 'https://www.instagram.com/share/BAA3SnA2OV',
+            image: 'https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.21.49_7d04ef28.jpg',
+            views: '1.0M',
+            alt: 'Video viral de Cami de julio con 1M de visualizaciones',
+            publishDate: '2025-07-01',
+            dateLabel: 'Julio 2025'
         }
     ],
     
