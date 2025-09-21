@@ -4,6 +4,11 @@
     --text-color: #f0f0f0;
     --primary-color: #9f7aea;
     --secondary-color: #f472b6;
+    --calipso-color: #00CED1;
+    --calipso-light: #40E0D0;
+    --calipso-dark: #008B8B;
+    --calipso-glow: rgba(0, 206, 209, 0.4);
+    --calipso-soft: rgba(0, 206, 209, 0.1);
     --font-family: 'Inter', sans-serif;
 }
 
@@ -303,99 +308,201 @@ body::before {
     margin-bottom: 50px;
 }
 
-/* --- Sobre Mí --- */
-.about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+/* --- SOBRE MÍ - DISEÑO LIMPIO Y RESPONSIVO --- */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
 }
 
-.about-main {
+/* Profile Section */
+.about-profile {
+    background: var(--card-color);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 206, 209, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.about-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 206, 209, 0.2);
+    border-color: var(--calipso-color);
+}
+
+.profile-image-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--calipso-color);
+    transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 206, 209, 0.4);
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.profile-role {
+    color: var(--calipso-color);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.profile-stats {
     display: flex;
-    align-items: center;
-    gap: 50px;
-    width: 100%;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 206, 209, 0.2);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--calipso-color);
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+    text-transform: uppercase;
+}
+
+/* Content Section */
+.about-content {
+    background: var(--card-color);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 206, 209, 0.2);
+    transition: all 0.3s ease;
+}
+
+.about-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 206, 209, 0.2);
+    border-color: var(--calipso-color);
 }
 
 .about-text p {
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.7;
     color: #c0c0c0;
+    margin-bottom: 2rem;
 }
 
-.profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid var(--card-color);
-    box-shadow: 0 0 25px rgba(159, 122, 234, 0.3);
-    flex-shrink: 0;
-    transition: all 0.5s ease;
-    animation: float 3s ease-in-out infinite;
-}
-
-.profile-pic:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 0 40px rgba(159, 122, 234, 0.6), 0 0 60px rgba(244, 114, 182, 0.4);
-    animation: glow 2s ease-in-out infinite;
-}
-
-.conference-gallery {
-    text-align: center;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.gallery-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: var(--text-color);
-}
-
-.gallery-images {
+.about-highlights {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
-.conference-pic {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 15px;
-    border: 3px solid var(--card-color);
-    transition: all 0.5s ease;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 206, 209, 0.1);
+    border-radius: 25px;
+    border: 1px solid rgba(0, 206, 209, 0.3);
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+    background: rgba(0, 206, 209, 0.2);
+    transform: translateY(-2px);
+}
+
+.highlight-icon {
+    font-size: 1.2rem;
+}
+
+.highlight-text {
+    color: var(--calipso-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Conference Section */
+.conference-section {
+    margin-top: 3rem;
+}
+
+.conference-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.conference-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.conference-item {
     position: relative;
+    border-radius: 15px;
     overflow: hidden;
+    background: var(--card-color);
+    border: 1px solid rgba(0, 206, 209, 0.2);
+    transition: all 0.3s ease;
 }
 
-.conference-pic::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
+.conference-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 206, 209, 0.3);
+    border-color: var(--calipso-color);
+}
+
+.conference-img {
     width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    transition: left 0.6s;
-    z-index: 1;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.3s ease;
 }
 
-.conference-pic:hover::before {
-    left: 100%;
+.conference-item:hover .conference-img {
+    transform: scale(1.05);
 }
 
-.conference-pic:hover {
-    transform: scale(1.08) translateY(-5px);
-    box-shadow: 0 15px 35px rgba(159, 122, 234, 0.4);
-    border-color: var(--primary-color);
+.conference-label {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: linear-gradient(135deg, var(--calipso-color), var(--calipso-light));
+    color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
+
+
 
 /* --- Contenido Destacado --- */
 .featured-content-grid {
@@ -1050,9 +1157,38 @@ body::before {
     .hero h2 {
         font-size: 1.2rem;
     }
-    .about-main {
+    /* Sobre Mí - Responsive */
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-profile,
+    .about-content {
+        padding: 1.5rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-stats {
         flex-direction: column;
-        text-align: center;
+        gap: 1rem;
+    }
+
+    .about-highlights {
+        justify-content: center;
+    }
+
+    .conference-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .conference-img {
+        height: 200px;
     }
 
     /* Contenido Destacado - Móviles */
@@ -1098,6 +1234,53 @@ body::before {
 
 /* Móviles muy pequeños */
 @media (max-width: 480px) {
+    /* Sobre Mí - Móviles pequeños */
+    .about-profile,
+    .about-content {
+        padding: 1rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .profile-role {
+        font-size: 0.9rem;
+    }
+
+    .stat-number {
+        font-size: 1.1rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .highlight-item {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .highlight-text {
+        font-size: 0.8rem;
+    }
+
+    .conference-title {
+        font-size: 1.5rem;
+    }
+
+    .conference-img {
+        height: 180px;
+    }
+
     .featured-content-grid {
         padding: 0 5px;
         gap: 15px;
