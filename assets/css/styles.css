@@ -425,13 +425,13 @@ body::after {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    opacity: 0;
-    animation: scaleIn 0.8s ease-out 1.5s forwards;
+    opacity: 1;
     border: 2px solid transparent;
     text-transform: uppercase;
     letter-spacing: 1px;
     min-width: 200px;
     text-align: center;
+    animation: scaleIn 0.8s ease-out 0.5s both;
 }
 
 /* Botón Primario */
@@ -948,6 +948,9 @@ body::after {
     border-radius: 20px;
     font-weight: 600;
     font-size: 0.9rem;
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -1148,6 +1151,91 @@ body::after {
     animation-play-state: paused;
 }
 
+/* Carrusel deslizable */
+.carousel-container {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel-container:active {
+    cursor: grabbing;
+}
+
+.carousel-track.dragging {
+    animation-play-state: paused;
+    transition: none;
+}
+
+.carousel-track.smooth-transition {
+    transition: transform 0.3s ease;
+}
+
+/* Emoticones flotantes en el header */
+.floating-emojis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.floating-emoji {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.7;
+    animation: float-emoji 15s linear infinite;
+    pointer-events: none;
+}
+
+.floating-emoji.facebook {
+    color: #1877f2;
+    animation-delay: 0s;
+}
+
+.floating-emoji.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-delay: 5s;
+}
+
+.floating-emoji.tiktok {
+    color: #ff0050;
+    animation-delay: 10s;
+}
+
+/* Posiciones aleatorias para los emoticones */
+.floating-emoji:nth-child(1) { left: 10%; animation-duration: 12s; }
+.floating-emoji:nth-child(2) { left: 20%; animation-duration: 18s; }
+.floating-emoji:nth-child(3) { left: 30%; animation-duration: 15s; }
+.floating-emoji:nth-child(4) { left: 40%; animation-duration: 20s; }
+.floating-emoji:nth-child(5) { left: 50%; animation-duration: 14s; }
+.floating-emoji:nth-child(6) { left: 60%; animation-duration: 16s; }
+.floating-emoji:nth-child(7) { left: 70%; animation-duration: 19s; }
+.floating-emoji:nth-child(8) { left: 80%; animation-duration: 13s; }
+.floating-emoji:nth-child(9) { left: 90%; animation-duration: 17s; }
+
+@keyframes float-emoji {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
 /* --- Estadísticas y Audiencia --- */
 .stats-grid {
     display: grid;
@@ -1202,6 +1290,16 @@ body::after {
 .stat-card .stat-label {
     position: relative;
     z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.stat-card .stat-label {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 0.5rem;
 }
 
 /* --- Mi Audiencia - Diseño Mejorado --- */
@@ -1946,6 +2044,11 @@ body::after {
         max-width: 220px;
     }
 
+    /* Emoticones flotantes - Tablets */
+    .floating-emoji {
+        font-size: 1.5rem;
+    }
+
     /* Forzar visibilidad en tablets para evitar problemas con animaciones */
     .fade-in,
     .slide-in-left,
@@ -2119,6 +2222,11 @@ body::after {
         padding: 1.5rem;
         min-height: 100px;
         max-width: 200px;
+    }
+
+    /* Emoticones flotantes - Móviles pequeños */
+    .floating-emoji {
+        font-size: 1.2rem;
     }
 
     /* Forzar visibilidad en móviles para evitar problemas con animaciones */

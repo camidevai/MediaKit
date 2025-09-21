@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     el.textContent = translations[lang][key];
                 }
+            } else {
+                console.warn(`Translation missing for key: ${key} in language: ${lang}`);
             }
         });
         
@@ -32,6 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Set initial language
     setLanguage('es');
+
+    // Force translation update after a short delay to ensure all elements are loaded
+    setTimeout(() => {
+        setLanguage('es');
+    }, 100);
 
     // Enhanced scroll animations
     const observer = new IntersectionObserver((entries) => {
