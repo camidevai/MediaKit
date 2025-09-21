@@ -27,10 +27,17 @@
             <button id="lang-es">ES</button>
             <button id="lang-en">EN</button>
         </div>
-        <h1 class="animated-gradient-text">CAMIDEVAI</h1>
-        <h2 data-translate-key="heroSubtitle"></h2>
-        <p class="mission" data-translate-key="heroMission"></p>
-        <a href="#contact" class="cta-button" data-translate-key="heroCTA"></a>
+
+        <div class="hero-content">
+            <h1 class="animated-gradient-text">CAMIDEVAI</h1>
+            <h2 data-translate-key="heroSubtitle"></h2>
+            <p class="mission" data-translate-key="heroMission"></p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button primary" data-translate-key="heroCTA"></a>
+                <a href="#package" class="cta-button secondary" data-translate-key="collaborateButton"></a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -120,7 +127,7 @@
         <section id="stats" class="section container fade-in">
             <h2 class="section-title scale-in" data-translate-key="statsTitle"></h2>
             <div class="stats-grid">
-                <div class="stat-card scale-in">
+                <div class="stat-card scale-in text-center">
                     <div class="stat-number">+208K</div>
                     <div class="stat-label" data-translate-key="statsFollowersIG"></div>
                 </div>
@@ -146,156 +153,214 @@
         <!-- CONTENIDO DESTACADO -->
         <section id="featured-content" class="section container fade-in">
           <h2 class="section-title scale-in" data-translate-key="featuredTitle"></h2>
-          <div class="featured-content-grid">
+          <div class="carousel-container">
+            <div class="carousel-track">
 
-            <div class="featured-card slide-in-left">
-              <a href="https://www.instagram.com/share/BBT2ZDNwxc" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.55.16_bc83456d.md.jpg"
-                     alt="Captura de video viral de Cami sobre programación"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">8.6M</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
+              <!-- #1 - 8.6M views -->
+              <div class="featured-card">
+                <a href="https://www.instagram.com/share/BBT2ZDNwxc" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.55.16_bc83456d.md.jpg"
+                       alt="Captura de video viral de Cami sobre programación"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">8.6M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#1</div>
+                </div>
               </div>
-            </div>
 
-            <div class="featured-card scale-in">
-              <a href="https://www.instagram.com/share/BAJp23snJA" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.59.35_3458ba76.md.jpg"
-                     alt="Captura de video viral de Cami con 2.3M de vistas"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">2.3M</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
+              <!-- #2 - 3.3M views -->
+              <div class="featured-card">
+                <a href="https://vm.tiktok.com/ZMAUn335s/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/09/20/imagea1adb3755e486297.png"
+                       alt="Video viral de Cami en TikTok con 3.3M de visualizaciones"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">3.3M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#2</div>
+                  <div class="featured-platform">TikTok</div>
+                </div>
               </div>
-            </div>
 
-            <div class="featured-card slide-in-right">
-              <a href="https://www.instagram.com/share/_apZ0PBS-" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.58.19_af30cf12.md.jpg"
-                     alt="Captura de video viral de Cami con 1.4M de vistas"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">1.4M</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
+              <!-- #3 - 2.3M views -->
+              <div class="featured-card">
+                <a href="https://www.instagram.com/share/BAJp23snJA" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.59.35_3458ba76.md.jpg"
+                       alt="Captura de video viral de Cami con 2.3M de vistas"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">2.3M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#3</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Nuevo video viral - Septiembre 2025 -->
-            <div class="featured-card slide-in-left">
-              <a href="https://www.instagram.com/share/_69xybLR8" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.14.36_1c67afe5.jpg"
-                     alt="Nuevo video viral de Cami publicado el 3 de septiembre"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">1.1M</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
-                <div class="featured-date">Septiembre 2025</div>
+              <!-- #4 - 1.6M views -->
+              <div class="featured-card">
+                <a href="https://www.facebook.com/share/r/15xV6q9mH2/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/09/20/image.png"
+                       alt="Video viral de Cami en Facebook con 1.6M de visualizaciones"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Facebook+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">1.6M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#4</div>
+                  <div class="featured-platform">Facebook</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Video viral - Julio 2025 -->
-            <div class="featured-card scale-in">
-              <a href="https://www.instagram.com/share/BAA3SnA2OV" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.21.49_7d04ef28.jpg"
-                     alt="Video viral de Cami de julio con 1M de visualizaciones"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">1.0M</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
-                <div class="featured-date">Julio 2025</div>
+              <!-- #5 - 1.4M views -->
+              <div class="featured-card">
+                <a href="https://www.instagram.com/share/_apZ0PBS-" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.58.19_af30cf12.md.jpg"
+                       alt="Captura de video viral de Cami con 1.4M de vistas"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">1.4M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#5</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Video viral Facebook - 1.6M visualizaciones -->
-            <div class="featured-card slide-in-right">
-              <a href="https://www.facebook.com/share/r/15xV6q9mH2/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/09/20/image.png"
-                     alt="Video viral de Cami en Facebook con 1.6M de visualizaciones"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Facebook+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">1.6M</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
-                <div class="featured-platform">Facebook</div>
+              <!-- #6 - 1.3M views -->
+              <div class="featured-card">
+                <a href="https://vm.tiktok.com/ZMAUno9fN/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/09/20/imaged0f431a831e56d4a.png"
+                       alt="Video viral de Cami en TikTok con 1.3M de visualizaciones"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">1.3M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#6</div>
+                  <div class="featured-platform">TikTok</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Video TikTok - 3.3M visualizaciones -->
-            <div class="featured-card slide-in-left">
-              <a href="https://vm.tiktok.com/ZMAUn335s/" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/09/20/imagea1adb3755e486297.png"
-                     alt="Video viral de Cami en TikTok con 3.3M de visualizaciones"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">3.3M</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
-                <div class="featured-platform">TikTok</div>
+              <!-- #7 - 1.1M views (Instagram) -->
+              <div class="featured-card">
+                <a href="https://www.instagram.com/share/_69xybLR8" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.14.36_1c67afe5.jpg"
+                       alt="Nuevo video viral de Cami publicado el 3 de septiembre"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">1.1M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#7</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Video TikTok - 1.3M visualizaciones -->
-            <div class="featured-card scale-in">
-              <a href="https://vm.tiktok.com/ZMAUno9fN/" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/09/20/imaged0f431a831e56d4a.png"
-                     alt="Video viral de Cami en TikTok con 1.3M de visualizaciones"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">1.3M</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
-                <div class="featured-platform">TikTok</div>
+              <!-- #8 - 1.1M views (TikTok) -->
+              <div class="featured-card">
+                <a href="https://www.tiktok.com/@camidevai/video/7453079647580916997" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/09/20/imageff3912252be5631f.png"
+                       alt="Video viral de Cami en TikTok con 1.1M de visualizaciones"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">1.1M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#8</div>
+                  <div class="featured-platform">TikTok</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Video TikTok - 1.1M visualizaciones -->
-            <div class="featured-card slide-in-right">
-              <a href="https://www.tiktok.com/@camidevai/video/7453079647580916997?_r=1&u_code=dc39bi5h7ela1a&preview_pb=0&sharer_language=es&_d=eem15059iih7di&share_item_id=7453079647580916997&source=h5_m&timestamp=1758410767&item_author_type=1&utm_source=whatsapp&tt_from=whatsapp&enable_checksum=1&utm_medium=ios&share_link_id=F1E214D8-8399-4199-A43E-06FE99CF6903&user_id=6818700708099965957&sec_user_id=MS4wLjABAAAATdtafneiAjmLakDwNQh6XwRmYk8mXSWjqYLm06-0VWlO7rZ4RUTTd3WiLuwUn0Jt&social_share_type=0&ug_btm=b0,b2878&utm_campaign=client_share&link_reflow_popup_iteration_sharer=%7B%22dynamic_cover%22:1,%22click_empty_to_play%22:1,%22profile_clickable%22:1,%22follow_to_play_duration%22:-1%7D&share_app_id=1233" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/09/20/imageff3912252be5631f.png"
-                     alt="Video viral de Cami en TikTok con 1.1M de visualizaciones"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">1.1M</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
-                <div class="featured-platform">TikTok</div>
+              <!-- #9 - 1.0M views -->
+              <div class="featured-card">
+                <a href="https://www.instagram.com/share/BAA3SnA2OV" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.21.49_7d04ef28.jpg"
+                       alt="Video viral de Cami de julio con 1M de visualizaciones"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">1.0M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#9</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Video Facebook - 421K visualizaciones -->
-            <div class="featured-card slide-in-left">
-              <a href="https://www.facebook.com/share/r/1Grbk3YudU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/09/20/image64fac5531aa189b6.png"
-                     alt="Video viral de Cami en Facebook con 421K de visualizaciones"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Facebook+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">421K</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
-                <div class="featured-platform">Facebook</div>
+              <!-- #10 - 421K views -->
+              <div class="featured-card">
+                <a href="https://www.facebook.com/share/r/1Grbk3YudU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/09/20/image64fac5531aa189b6.png"
+                       alt="Video viral de Cami en Facebook con 421K de visualizaciones"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Facebook+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">421K</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#10</div>
+                  <div class="featured-platform">Facebook</div>
+                </div>
               </div>
-            </div>
 
-            <!-- Video Facebook - 406K visualizaciones -->
-            <div class="featured-card scale-in">
-              <a href="https://www.facebook.com/share/r/167CHGdMYx/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                <img src="https://subir-imagen.com/images/2025/09/20/imagec4b7dd2debe7bc71.png"
-                     alt="Video viral de Cami en Facebook con 406K de visualizaciones"
-                     onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Facebook+Video';">
-              </a>
-              <div class="featured-info">
-                <div class="featured-views">406K</div>
-                <div class="featured-label" data-translate-key="featuredLabel"></div>
-                <div class="featured-platform">Facebook</div>
+              <!-- #11 - 406K views -->
+              <div class="featured-card">
+                <a href="https://www.facebook.com/share/r/167CHGdMYx/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/09/20/imagec4b7dd2debe7bc71.png"
+                       alt="Video viral de Cami en Facebook con 406K de visualizaciones"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Facebook+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">406K</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#11</div>
+                  <div class="featured-platform">Facebook</div>
+                </div>
               </div>
-            </div>
 
+              <!-- DUPLICADOS PARA EFECTO INFINITO -->
+              <!-- Duplicado #1 - 8.6M views -->
+              <div class="featured-card">
+                <a href="https://www.instagram.com/share/BBT2ZDNwxc" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.55.16_bc83456d.md.jpg"
+                       alt="Captura de video viral de Cami sobre programación"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">8.6M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#1</div>
+                </div>
+              </div>
+
+              <!-- Duplicado #2 - 3.3M views -->
+              <div class="featured-card">
+                <a href="https://vm.tiktok.com/ZMAUn335s/" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/09/20/imagea1adb3755e486297.png"
+                       alt="Video viral de Cami en TikTok con 3.3M de visualizaciones"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">3.3M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#2</div>
+                  <div class="featured-platform">TikTok</div>
+                </div>
+              </div>
+
+              <!-- Duplicado #3 - 2.3M views -->
+              <div class="featured-card">
+                <a href="https://www.instagram.com/share/BAJp23snJA" target="_blank" rel="noopener noreferrer">
+                  <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.59.35_3458ba76.md.jpg"
+                       alt="Captura de video viral de Cami con 2.3M de vistas"
+                       onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
+                </a>
+                <div class="featured-info">
+                  <div class="featured-views">2.3M</div>
+                  <div class="featured-label" data-translate-key="featuredLabel"></div>
+                  <div class="featured-rank">#3</div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
 

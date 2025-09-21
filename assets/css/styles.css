@@ -284,6 +284,22 @@ body::after {
         linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
 }
 
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -400,8 +416,6 @@ body::after {
 }
 
 .cta-button {
-    background: linear-gradient(135deg, var(--calipso-color), var(--calipso-light));
-    color: var(--background-color);
     text-decoration: none;
     padding: 18px 40px;
     border-radius: 50px;
@@ -416,9 +430,27 @@ body::after {
     border: 2px solid transparent;
     text-transform: uppercase;
     letter-spacing: 1px;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* Botón Primario */
+.cta-button.primary {
+    background: linear-gradient(135deg, var(--calipso-color), var(--calipso-light));
+    color: var(--background-color);
     box-shadow:
         0 0 20px rgba(0, 206, 209, 0.3),
         inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Botón Secundario */
+.cta-button.secondary {
+    background: transparent;
+    color: var(--calipso-color);
+    border: 2px solid var(--calipso-color);
+    box-shadow:
+        0 0 15px rgba(0, 206, 209, 0.2),
+        inset 0 0 15px rgba(0, 206, 209, 0.05);
 }
 
 .cta-button::before {
@@ -454,16 +486,28 @@ body::after {
     opacity: 1;
 }
 
-.cta-button:hover {
+/* Hover para botón primario */
+.cta-button.primary:hover {
     transform: scale(1.08) translateY(-5px);
     box-shadow:
         0 15px 35px rgba(0, 206, 209, 0.5),
         0 0 40px rgba(0, 206, 209, 0.3),
         inset 0 0 30px rgba(255, 255, 255, 0.2);
-    animation: cta-pulse 2s ease-in-out infinite;
+    animation: cta-pulse-primary 2s ease-in-out infinite;
 }
 
-@keyframes cta-pulse {
+/* Hover para botón secundario */
+.cta-button.secondary:hover {
+    transform: scale(1.05) translateY(-3px);
+    background: rgba(0, 206, 209, 0.1);
+    box-shadow:
+        0 10px 25px rgba(0, 206, 209, 0.4),
+        0 0 30px rgba(0, 206, 209, 0.2),
+        inset 0 0 25px rgba(0, 206, 209, 0.1);
+    animation: cta-pulse-secondary 2s ease-in-out infinite;
+}
+
+@keyframes cta-pulse-primary {
     0%, 100% {
         box-shadow:
             0 15px 35px rgba(0, 206, 209, 0.5),
@@ -475,6 +519,21 @@ body::after {
             0 20px 45px rgba(0, 206, 209, 0.7),
             0 0 60px rgba(0, 206, 209, 0.5),
             inset 0 0 40px rgba(255, 255, 255, 0.3);
+    }
+}
+
+@keyframes cta-pulse-secondary {
+    0%, 100% {
+        box-shadow:
+            0 10px 25px rgba(0, 206, 209, 0.4),
+            0 0 30px rgba(0, 206, 209, 0.2),
+            inset 0 0 25px rgba(0, 206, 209, 0.1);
+    }
+    50% {
+        box-shadow:
+            0 15px 35px rgba(0, 206, 209, 0.6),
+            0 0 45px rgba(0, 206, 209, 0.4),
+            inset 0 0 35px rgba(0, 206, 209, 0.2);
     }
 }
 
@@ -893,11 +952,21 @@ body::after {
 
 
 
-/* --- Contenido Destacado --- */
-.featured-content-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+/* --- Contenido Destacado - Carrusel Infinito --- */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-infinite 60s linear infinite;
+    width: max-content;
 }
 
 .featured-card {
@@ -909,6 +978,9 @@ body::after {
     position: relative;
     transform: translateY(0);
     cursor: pointer;
+    flex-shrink: 0;
+    width: 280px;
+    min-width: 280px;
 }
 
 .featured-card::before {
@@ -1046,12 +1118,90 @@ body::after {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Ranking badge */
+.featured-rank {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, var(--calipso-color), var(--calipso-light));
+    color: var(--background-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    z-index: 3;
+    box-shadow: 0 4px 12px rgba(0, 206, 209, 0.4);
+}
+
+/* Animación del carrusel infinito */
+@keyframes scroll-infinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-280px * 11 - 2rem * 11));
+    }
+}
+
+/* Pausa la animación al hacer hover */
+.carousel-container:hover .carousel-track {
+    animation-play-state: paused;
+}
+
 /* --- Estadísticas y Audiencia --- */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: clamp(15px, 3vw, 30px);
     justify-items: center;
+    padding: 0 10px;
+}
+
+.stat-card {
+    background: var(--card-color);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--calipso-color), var(--calipso-light));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.stat-card:hover::before {
+    opacity: 0.05;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--calipso-color);
+    box-shadow: 0 10px 25px rgba(0, 206, 209, 0.2);
+}
+
+.stat-card .stat-number,
+.stat-card .stat-label {
+    position: relative;
+    z-index: 1;
 }
 
 /* --- Mi Audiencia - Diseño Mejorado --- */
@@ -1134,15 +1284,17 @@ body::after {
 }
 
 .stat-number {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 900;
     margin-bottom: 5px;
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     animation: gradient-animation 3s ease infinite;
     transition: all 0.3s ease;
+    line-height: 1.1;
 }
 
 
@@ -1659,11 +1811,46 @@ body::after {
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 3rem;
+    /* Hero Section - Móvil */
+    .hero {
+        padding: 60px 15px;
+        min-height: 90vh;
     }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
     .hero h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .mission {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        padding: 0 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 280px;
+        padding: 16px 30px;
+        font-size: 1rem;
+        margin: 0 auto;
     }
     /* Sobre Mí - Responsive */
     .about-container {
@@ -1715,16 +1902,21 @@ body::after {
         padding: 1.5rem;
     }
 
-    /* Contenido Destacado - Móviles */
-    .featured-content-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 10px;
+    /* Contenido Destacado - Carrusel Móvil */
+    .carousel-container {
+        margin-top: 1.5rem;
+        mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+        -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+    }
+
+    .carousel-track {
+        gap: 1.5rem;
+        animation-duration: 80s;
     }
 
     .featured-card {
-        max-width: 100%;
-        margin: 0 auto;
+        width: 250px;
+        min-width: 250px;
     }
 
     .featured-card img {
@@ -1738,6 +1930,20 @@ body::after {
 
     .featured-views {
         font-size: 1.5rem;
+    }
+
+    .featured-rank {
+        top: 10px;
+        left: 10px;
+        padding: 0.4rem 0.6rem;
+        font-size: 0.7rem;
+    }
+
+    /* Estadísticas - Tablets */
+    .stat-card {
+        padding: 1.8rem;
+        min-height: 110px;
+        max-width: 220px;
     }
 
     /* Forzar visibilidad en tablets para evitar problemas con animaciones */
@@ -1758,6 +1964,39 @@ body::after {
 
 /* Móviles muy pequeños */
 @media (max-width: 480px) {
+    /* Hero - Móviles muy pequeños */
+    .hero {
+        padding: 40px 10px;
+        min-height: 85vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero .mission {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        padding: 0 5px;
+    }
+
+    .cta-button {
+        padding: 14px 25px;
+        font-size: 0.9rem;
+        max-width: 250px;
+        letter-spacing: 0.5px;
+    }
+
+    .hero-buttons {
+        gap: 0.75rem;
+    }
+
     /* Sobre Mí - Móviles pequeños */
     .about-profile,
     .about-content {
@@ -1835,12 +2074,15 @@ body::after {
         font-size: 0.75rem;
     }
 
-    .featured-content-grid {
-        padding: 0 5px;
-        gap: 15px;
+    /* Carrusel - Móviles muy pequeños */
+    .carousel-track {
+        gap: 1rem;
+        animation-duration: 100s;
     }
 
     .featured-card {
+        width: 220px;
+        min-width: 220px;
         border-radius: 10px;
     }
 
@@ -1856,6 +2098,13 @@ body::after {
         font-size: 1.3rem;
     }
 
+    .featured-rank {
+        top: 8px;
+        left: 8px;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.65rem;
+    }
+
     .featured-label {
         font-size: 0.8rem;
     }
@@ -1863,6 +2112,13 @@ body::after {
     .featured-platform {
         font-size: 0.7rem;
         padding: 4px 8px;
+    }
+
+    /* Estadísticas - Móviles muy pequeños */
+    .stat-card {
+        padding: 1.5rem;
+        min-height: 100px;
+        max-width: 200px;
     }
 
     /* Forzar visibilidad en móviles para evitar problemas con animaciones */
