@@ -131,4 +131,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('EmailJS Error:', error);
             });
     });
+
+    // Aplicar estilos específicos a las plataformas
+    function applyPlatformStyles() {
+        const platformElements = document.querySelectorAll('.featured-platform');
+        platformElements.forEach(element => {
+            const text = element.textContent.toLowerCase();
+            if (text.includes('tiktok')) {
+                element.style.color = '#ff0050';
+                element.style.background = 'rgba(255, 0, 80, 0.1)';
+                element.style.border = '1px solid rgba(255, 0, 80, 0.3)';
+            } else if (text.includes('facebook')) {
+                element.style.color = '#1877f2';
+                element.style.background = 'rgba(24, 119, 242, 0.1)';
+                element.style.border = '1px solid rgba(24, 119, 242, 0.3)';
+            }
+        });
+    }
+
+    // Aplicar estilos al cargar la página
+    applyPlatformStyles();
 });

@@ -51,6 +51,49 @@ const CONFIG = {
             alt: 'Video viral de Cami de julio con 1M de visualizaciones',
             publishDate: '2025-07-01',
             dateLabel: 'Julio 2025'
+        },
+        // Nuevos videos de Facebook y TikTok
+        {
+            url: 'https://www.facebook.com/share/r/15xV6q9mH2/?mibextid=wwXIfr',
+            image: 'https://subir-imagen.com/images/2025/09/20/image.png',
+            views: '1.6M',
+            alt: 'Video viral de Cami en Facebook con 1.6M de visualizaciones',
+            platform: 'Facebook'
+        },
+        {
+            url: 'https://vm.tiktok.com/ZMAUn335s/',
+            image: 'https://subir-imagen.com/images/2025/09/20/imagea1adb3755e486297.png',
+            views: '3.3M',
+            alt: 'Video viral de Cami en TikTok con 3.3M de visualizaciones',
+            platform: 'TikTok'
+        },
+        {
+            url: 'https://vm.tiktok.com/ZMAUno9fN/',
+            image: 'https://subir-imagen.com/images/2025/09/20/imaged0f431a831e56d4a.png',
+            views: '1.3M',
+            alt: 'Video viral de Cami en TikTok con 1.3M de visualizaciones',
+            platform: 'TikTok'
+        },
+        {
+            url: 'https://www.tiktok.com/@camidevai/video/7453079647580916997?_r=1&u_code=dc39bi5h7ela1a&preview_pb=0&sharer_language=es&_d=eem15059iih7di&share_item_id=7453079647580916997&source=h5_m&timestamp=1758410767&item_author_type=1&utm_source=whatsapp&tt_from=whatsapp&enable_checksum=1&utm_medium=ios&share_link_id=F1E214D8-8399-4199-A43E-06FE99CF6903&user_id=6818700708099965957&sec_user_id=MS4wLjABAAAATdtafneiAjmLakDwNQh6XwRmYk8mXSWjqYLm06-0VWlO7rZ4RUTTd3WiLuwUn0Jt&social_share_type=0&ug_btm=b0,b2878&utm_campaign=client_share&link_reflow_popup_iteration_sharer=%7B%22dynamic_cover%22:1,%22click_empty_to_play%22:1,%22profile_clickable%22:1,%22follow_to_play_duration%22:-1%7D&share_app_id=1233',
+            image: 'https://subir-imagen.com/images/2025/09/20/imageff3912252be5631f.png',
+            views: '1.1M',
+            alt: 'Video viral de Cami en TikTok con 1.1M de visualizaciones',
+            platform: 'TikTok'
+        },
+        {
+            url: 'https://www.facebook.com/share/r/1Grbk3YudU/?mibextid=wwXIfr',
+            image: 'https://subir-imagen.com/images/2025/09/20/image64fac5531aa189b6.png',
+            views: '421K',
+            alt: 'Video viral de Cami en Facebook con 421K de visualizaciones',
+            platform: 'Facebook'
+        },
+        {
+            url: 'https://www.facebook.com/share/r/167CHGdMYx/?mibextid=wwXIfr',
+            image: 'https://subir-imagen.com/images/2025/09/20/imagec4b7dd2debe7bc71.png',
+            views: '406K',
+            alt: 'Video viral de Cami en Facebook con 406K de visualizaciones',
+            platform: 'Facebook'
         }
     ],
     

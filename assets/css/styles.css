@@ -513,6 +513,43 @@ body::before {
     border: 1px solid rgba(159, 122, 234, 0.3);
 }
 
+.featured-platform {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    /* Estilo por defecto */
+    color: var(--primary-color);
+    background: rgba(159, 122, 234, 0.1);
+    border: 1px solid rgba(159, 122, 234, 0.3);
+}
+
+/* Estilos específicos para TikTok */
+.featured-platform[data-platform="tiktok"],
+.featured-platform:contains("TikTok") {
+    color: #ff0050;
+    background: rgba(255, 0, 80, 0.1);
+    border: 1px solid rgba(255, 0, 80, 0.3);
+}
+
+/* Estilos específicos para Facebook */
+.featured-platform[data-platform="facebook"],
+.featured-platform:contains("Facebook") {
+    color: #1877f2;
+    background: rgba(24, 119, 242, 0.1);
+    border: 1px solid rgba(24, 119, 242, 0.3);
+}
+
+/* Efectos hover para plataformas */
+.featured-card:hover .featured-platform {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 /* --- Estadísticas y Audiencia --- */
 .stats-grid {
     display: grid;
@@ -521,24 +558,42 @@ body::before {
     justify-items: center;
 }
 
-.audience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+/* --- Mi Audiencia - Diseño Mejorado --- */
+.audience-overview {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.stat-card, .audience-card {
-    background-color: var(--card-color);
-    padding: 30px;
-    border-radius: 15px;
+.section-subtitle {
     text-align: center;
-    border: 1px solid transparent;
-    transition: all 0.5s ease;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Métricas Principales */
+.audience-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.metric-card {
+    background: linear-gradient(135deg, var(--card-color) 0%, rgba(26, 26, 26, 0.8) 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(159, 122, 234, 0.2);
+    transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
 }
 
-.stat-card::before, .audience-card::before {
+.metric-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -549,14 +604,37 @@ body::before {
     transition: left 0.6s;
 }
 
-.stat-card:hover::before, .audience-card:hover::before {
+.metric-card:hover::before {
     left: 100%;
 }
 
-.stat-card:hover, .audience-card:hover {
-    transform: translateY(-15px) scale(1.05);
+.metric-card:hover {
+    transform: translateY(-10px) scale(1.05);
     border-color: var(--primary-color);
-    box-shadow: 0 15px 30px rgba(159, 122, 234, 0.3);
+    box-shadow: 0 20px 40px rgba(159, 122, 234, 0.3);
+}
+
+.metric-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.metric-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 3s ease infinite;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 1rem;
+    color: #a0a0a0;
+    font-weight: 500;
 }
 
 .stat-number {
@@ -571,34 +649,250 @@ body::before {
     transition: all 0.3s ease;
 }
 
-.stat-card:hover .stat-number {
-    transform: scale(1.2);
-    animation: pulse 1s infinite;
+
+
+/* Datos Demográficos */
+.audience-demographics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
-.stat-label, .audience-title {
-    font-size: 1.1rem;
+.demo-card {
+    background: var(--card-color);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(159, 122, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+.demo-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 30px rgba(159, 122, 234, 0.2);
+}
+
+.demo-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.demo-icon {
+    font-size: 1.5rem;
+}
+
+.demo-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.demo-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.demo-stat:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
     font-weight: 500;
     color: #a0a0a0;
 }
 
-.audience-card ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
+.stat-value {
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
-.audience-card li {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #c0c0c0;
+/* Intereses */
+.audience-interests {
+    margin-bottom: 4rem;
 }
 
-.audience-title {
+.interests-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.interest-tag {
+    background: linear-gradient(135deg, rgba(159, 122, 234, 0.1) 0%, rgba(244, 114, 182, 0.1) 100%);
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid rgba(159, 122, 234, 0.3);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.interest-tag:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: linear-gradient(135deg, rgba(159, 122, 234, 0.2) 0%, rgba(244, 114, 182, 0.2) 100%);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(159, 122, 234, 0.3);
+}
+
+.tag-icon {
+    font-size: 1.2rem;
+}
+
+/* Conectando a través de Plataformas */
+.platform-connection {
+    margin-bottom: 2rem;
+}
+
+.connection-title {
+    text-align: center;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--text-color);
-    margin-bottom: 10px;
-    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.connection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.connection-card {
+    background: linear-gradient(135deg, var(--card-color) 0%, rgba(26, 26, 26, 0.9) 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(159, 122, 234, 0.2);
+    transition: all 0.4s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.connection-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(159, 122, 234, 0.1), transparent);
+    transition: left 0.6s;
+}
+
+.connection-card:hover::before {
+    left: 100%;
+}
+
+.connection-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(159, 122, 234, 0.3);
+}
+
+.platform-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.platform-icon {
+    font-size: 2.5rem;
+}
+
+.platform-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.platform-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.platform-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #c0c0c0;
+    line-height: 1.6;
+    padding: 1rem;
+    background: rgba(159, 122, 234, 0.1);
+    border-radius: 10px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.platform-focus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 25px;
+    font-weight: 600;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.focus-icon {
+    font-size: 1.1rem;
+}
+
+.focus-text {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive para audiencia */
+@media (max-width: 768px) {
+    .audience-metrics {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .audience-demographics {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .connection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .metric-number {
+        font-size: 2rem;
+    }
+
+    .interests-title, .connection-title {
+        font-size: 1.5rem;
+    }
 }
 
 /* --- Paquete de Colaboración --- */
