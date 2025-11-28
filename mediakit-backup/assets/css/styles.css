@@ -1,0 +1,484 @@
+:root {
+    --background-color: #0a0a0a;
+    --card-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --primary-color: #9f7aea;
+    --secondary-color: #f472b6;
+    --font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* --- Language Switcher --- */
+.lang-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.lang-switcher button {
+    background: none;
+    border: 1px solid var(--card-color);
+    color: #a0a0a0;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-switcher button:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.lang-switcher button:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: none;
+}
+
+.lang-switcher button.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* --- Animaciones y Efectos --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animated-gradient-text {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 6s ease infinite;
+}
+
+.fade-in {
+    opacity: 0;
+}
+
+.fade-in.visible {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* --- Header y Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 1px solid var(--card-color);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #a0a0a0;
+    margin-bottom: 30px;
+}
+
+.hero .mission {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--secondary-color);
+}
+
+/* --- Secciones --- */
+.section {
+    padding: 80px 0;
+    border-bottom: 1px solid var(--card-color);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* --- Sobre Mí --- */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-main {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #c0c0c0;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--card-color);
+    box-shadow: 0 0 25px rgba(159, 122, 234, 0.3);
+    flex-shrink: 0;
+}
+
+.conference-gallery {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.gallery-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.conference-pic {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid var(--card-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.conference-pic:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(159, 122, 234, 0.2);
+}
+
+/* --- Contenido Destacado --- */
+.featured-content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.featured-card {
+    background-color: var(--card-color);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary-color);
+}
+
+.featured-card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-views {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+.featured-label {
+    font-size: 1.1rem;
+    color: #a0a0a0;
+}
+
+/* --- Estadísticas y Audiencia --- */
+.stats-grid, .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.stat-card, .audience-card {
+    background-color: var(--card-color);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.stat-card:hover, .audience-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label, .audience-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #a0a0a0;
+}
+
+.audience-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.audience-card li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #c0c0c0;
+}
+
+.audience-title {
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* --- Paquete de Colaboración --- */
+.package-card {
+    background-color: var(--card-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(159, 122, 234, 0.2);
+}
+
+.package-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.package-card p {
+    font-size: 1.1rem;
+    color: #c0c0c0;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.package-includes {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.package-includes li {
+    margin-bottom: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.package-includes .check-icon {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* --- Formulario de Contacto --- */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #a0a0a0;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: var(--card-color);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: var(--font-family);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(159, 122, 234, 0.5);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#form-message {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+.form-message.success {
+    background-color: rgba(60, 179, 113, 0.2);
+    color: #3cb371;
+}
+
+.form-message.error {
+    background-color: rgba(220, 20, 60, 0.2);
+    color: #dc143c;
+}
+
+.submit-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.submit-button:hover:not(:disabled) {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--primary-color), 0 0 30px var(--secondary-color);
+}
+
+.submit-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid var(--card-color);
+}
+
+.footer p {
+    color: #a0a0a0;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    .about-main {
+        flex-direction: column;
+        text-align: center;
+    }
+     .lang-switcher {
+        position: static;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
