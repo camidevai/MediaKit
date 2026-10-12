@@ -7,15 +7,24 @@ const CONFIG = {
         PUBLIC_KEY: '1aZEaVP20Ayfhpkp0'
     },
     
-    // Social Media Statistics (update these regularly)
+    // Current community is self-reported on LinkedIn, reviewed 2026-10-12.
+    // Video performance is a historical portfolio result, not current monthly reach.
     stats: {
-        instagram: '+208K',
-        tiktok: '+72.5K',
-        facebook: '+106K',
-        community: '+400K',
-        reach: '+3.5M'
+        community: '500K+',
+        bestVideo: '8.6M'
     },
-    
+    statsSources: {
+        community: 'https://www.linkedin.com/in/camilabanares/',
+        communityReviewedAt: '2026-10-12',
+        bestVideoPeriod: '2025'
+    },
+    profile: {
+        name: 'Camila Daniela Bañares Carrasco',
+        brand: 'CamiDevAI',
+        linkedin: 'https://www.linkedin.com/in/camilabanares/',
+        instagram: 'https://www.instagram.com/camidevai/'
+    },
+
     // Featured Content (update with new viral videos)
     featuredContent: [
         {
@@ -121,3 +130,4 @@ const CONFIG = {
 
 // Export for use in other files (if using modules)
 // export default CONFIG;
+

@@ -1,6 +1,12 @@
 // Main JavaScript functionality
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Apply the same figures wherever community and portfolio results appear.
+    document.querySelectorAll('[data-stat-key]').forEach(el => {
+        const value = CONFIG.stats[el.dataset.statKey];
+        if (value) el.textContent = value;
+    });
+
     // Language management
     const langEsBtn = document.getElementById('lang-es');
     const langEnBtn = document.getElementById('lang-en');
@@ -37,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Force translation update after a short delay to ensure all elements are loaded
     setTimeout(() => {
-        setLanguage('es');
+        setLanguage(currentLang);
     }, 100);
 
     // Enhanced scroll animations
@@ -57,59 +63,23 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Add counter animation for statistics
-    const animateCounters = () => {
-        const counters = document.querySelectorAll('.stat-number');
-        counters.forEach(counter => {
-            const target = counter.textContent;
-            const numericValue = parseInt(target.replace(/[^\d]/g, ''));
-            const suffix = target.replace(/[\d.]/g, '');
-
-            if (numericValue) {
-                let current = 0;
-                const increment = numericValue / 50;
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= numericValue) {
-                        counter.textContent = target;
-                        clearInterval(timer);
-                    } else {
-                        counter.textContent = Math.floor(current) + suffix;
-                    }
-                }, 30);
-            }
-        });
-    };
-
-    // Trigger counter animation when stats section is visible
-    const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounters();
-                statsObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-
-    const statsSection = document.getElementById('stats');
-    if (statsSection) {
-        statsObserver.observe(statsSection);
-    }
-
     // Contact form functionality
     const contactForm = document.getElementById('contact-form');
     const submitBtn = document.getElementById('submit-btn');
     const formMessage = document.getElementById('form-message');
 
     // EmailJS configuration
-    const emailJsConfig = {
-        SERVICE_ID: 'service_t0cvv27',
-        TEMPLATE_ID: 'template_lh7gtfd',
-    };
+    const emailJsConfig = CONFIG.emailjs;
 
     // Form submission handler
     contactForm.addEventListener('submit', function(event) {
         event.preventDefault();
+
+        if (!window.emailjs) {
+            formMessage.textContent = translations[currentLang].formError;
+            formMessage.className = 'form-message error';
+            return;
+        }
 
         submitBtn.disabled = true;
         submitBtn.textContent = translations[currentLang].formSending;
@@ -159,3 +129,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Aplicar estilos al cargar la página
     applyPlatformStyles();
 });
+

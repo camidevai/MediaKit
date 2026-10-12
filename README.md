@@ -105,3 +105,36 @@ Este proyecto es de uso personal para Camidevai.
 ## 📞 Contacto
 
 Para consultas sobre el desarrollo: [camidevai@gmail.com](mailto:camidevai@gmail.com)
+
+
+
+## Actualización editorial — 12 de octubre de 2026
+
+Identidad: **Camila Daniela Bañares Carrasco**, creadora de CamiDevAI.
+
+La página incluye formación en informática, ciberseguridad e IA; evaluación ChileValora;
+vicepresidencia de la CCHIA; CMO y fundación de Informatik-AI; embajadurías HeyGen y APOB;
+formación complementaria, charlas, talleres, cursos y campañas para marcas.
+Los contenidos visibles están disponibles en español e inglés.
+
+### Referencias
+
+- Perfil y actividad pública de la titular: https://www.linkedin.com/in/camilabanares/
+- Canal oficial de Instagram: https://www.instagram.com/camidevai/
+- Confirmación de rol institucional y actividad como speaker: https://www.expomercadopublico.cl/s/speakers/
+
+La comunidad de **500K+** corresponde a la cifra declarada en el apartado Acerca de de LinkedIn,
+revisado el 12 de octubre de 2026. Las embajadurías y los bootcamps figuran en la actividad
+pública del mismo perfil. No se añadieron nombres, fechas o certificaciones de bootcamps
+que no pudieron comprobarse.
+
+El resultado de **8.6M** y las visualizaciones de los ejemplos son registros históricos del
+portafolio de 2025. La página los identifica como tales. Se retiraron cifras de alcance
+mensual, porcentajes de audiencia y promesas de conversión que no contaban con respaldo actual.
+Instagram restringió la consulta pública directa: no se presentan conteos por plataforma
+como si se hubieran obtenido en tiempo real.
+
+Las cifras que se muestran están centralizadas en `CONFIG.stats` de `assets/js/config.js`.
+El HTML conserva contenido en español antes de cargar JavaScript; `translations.js`
+contiene las versiones de ambos idiomas. El contacto por correo y LinkedIn está disponible
+además del formulario, cuya configuración existente de EmailJS se conserva.
