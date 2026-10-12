@@ -5,6 +5,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.getElementById('submit-btn');
     const submitLabel = submitButton.querySelector('[data-translate-key]');
     const formMessage = document.getElementById('form-message');
+    const performanceFilters = document.querySelectorAll('[data-performance-filter]');
+    const performanceCards = document.querySelectorAll('[data-performance-platform]');
+
+    function filterPerformance(platform) {
+        performanceCards.forEach(card => {
+            card.hidden = platform !== 'all' && card.dataset.performancePlatform !== platform;
+        });
+        performanceFilters.forEach(button => {
+            button.setAttribute('aria-pressed', String(button.dataset.performanceFilter === platform));
+        });
+    }
+
+    performanceFilters.forEach(button => {
+        button.addEventListener('click', () => filterPerformance(button.dataset.performanceFilter));
+    });
+    filterPerformance('Instagram');
 
     document.querySelectorAll('[data-stat-key]').forEach(element => {
         const value = CONFIG.stats[element.dataset.statKey];

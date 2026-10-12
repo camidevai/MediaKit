@@ -1,4 +1,3 @@
-// Site content and source periods.
 const CONFIG = {
     "emailjs": {
         "SERVICE_ID": "service_t0cvv27",
@@ -273,6 +272,241 @@ const CONFIG = {
             "views": "406K",
             "alt": "Video viral de Cami en Facebook con 406K de visualizaciones",
             "platform": "Facebook"
+        }
+    ],
+    "performanceContent": [
+        {
+            "id": "instagram-llamacoder",
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/share/BBT2ZDNwxc",
+            "image": "assets/images/performance/instagram-llamacoder.jpg",
+            "views": "8.6M",
+            "viewsValue": 8600000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "LlamaCoder: apps a partir de texto",
+                "en": "LlamaCoder: apps from text"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.55.16_bc83456d.md.jpg",
+            "resolvedUrl": "https://www.instagram.com/reel/DCCkYTjSBqL/?igsh=QkJjMnFvd0d3eA%3D%3D",
+            "postReviewedAt": "2026-10-12",
+            "verification": "Public Instagram post author, caption and publication date checked. Current views and attributed followers unavailable without Insights.",
+            "date": "2024-11-06",
+            "dateLabel": {
+                "es": "6 nov 2024",
+                "en": "Nov 6, 2024"
+            }
+        },
+        {
+            "id": "tiktok-1",
+            "platform": "TikTok",
+            "url": "https://vm.tiktok.com/ZMAUn335s/",
+            "image": "assets/images/performance/tiktok-1.png",
+            "views": "3.3M",
+            "viewsValue": 3300000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Video destacado · TikTok",
+                "en": "Featured video · TikTok"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/09/20/imagea1adb3755e486297.png",
+            "verification": "Preserved original portfolio link, image and view count. Not independently reverified on the platform."
+        },
+        {
+            "id": "instagram-empleo",
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/share/BAJp23snJA",
+            "image": "assets/images/performance/instagram-empleo.jpg",
+            "views": "2.3M",
+            "viewsValue": 2300000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Empleo digital para mujeres",
+                "en": "Digital jobs for women"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.59.35_3458ba76.md.jpg",
+            "resolvedUrl": "https://www.instagram.com/reel/DLJUGeFtdAs/?igsh=QkFJcnROMXIwcw%3D%3D",
+            "postReviewedAt": "2026-10-12",
+            "verification": "Public Instagram post author, caption and publication date checked. Current views and attributed followers unavailable without Insights.",
+            "date": "2025-06-20",
+            "dateLabel": {
+                "es": "20 jun 2025",
+                "en": "Jun 20, 2025"
+            }
+        },
+        {
+            "id": "facebook-1",
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/share/r/15xV6q9mH2/?mibextid=wwXIfr",
+            "image": "assets/images/performance/facebook-1.png",
+            "views": "1.6M",
+            "viewsValue": 1600000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Video destacado · Facebook",
+                "en": "Featured video · Facebook"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/09/20/image.png",
+            "verification": "Preserved original portfolio link, image and view count. Not independently reverified on the platform."
+        },
+        {
+            "id": "instagram-tutorial",
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/share/_apZ0PBS-",
+            "image": "assets/images/performance/instagram-tutorial.jpg",
+            "views": "1.4M",
+            "viewsValue": 1400000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Dibujos para colorear con IA",
+                "en": "Colouring pages with AI"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.58.19_af30cf12.md.jpg",
+            "resolvedUrl": "https://www.instagram.com/reel/C_1PuTZSfMZ/?igsh=QkFGZzFHYllsTg%3D%3D",
+            "postReviewedAt": "2026-10-12",
+            "verification": "Public Instagram post author, caption and publication date checked. Current views and attributed followers unavailable without Insights.",
+            "date": "2024-09-12",
+            "dateLabel": {
+                "es": "12 sep 2024",
+                "en": "Sep 12, 2024"
+            }
+        },
+        {
+            "id": "tiktok-2",
+            "platform": "TikTok",
+            "url": "https://vm.tiktok.com/ZMAUno9fN/",
+            "image": "assets/images/performance/tiktok-2.png",
+            "views": "1.3M",
+            "viewsValue": 1300000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Video destacado · TikTok",
+                "en": "Featured video · TikTok"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/09/20/imaged0f431a831e56d4a.png",
+            "verification": "Preserved original portfolio link, image and view count. Not independently reverified on the platform."
+        },
+        {
+            "id": "instagram-septiembre",
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/share/_69xybLR8",
+            "image": "assets/images/performance/instagram-septiembre.jpg",
+            "views": "1.1M",
+            "viewsValue": 1100000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Claseflix",
+                "en": "Claseflix"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.14.36_1c67afe5.jpg",
+            "resolvedUrl": "https://www.instagram.com/reel/DOKCjmLgIh1/?igsh=QkFSekN2Nk12RA%3D%3D",
+            "postReviewedAt": "2026-10-12",
+            "verification": "Public Instagram post author, caption and publication date checked. Current views and attributed followers unavailable without Insights.",
+            "date": "2025-09-03",
+            "dateLabel": {
+                "es": "3 sep 2025",
+                "en": "Sep 3, 2025"
+            }
+        },
+        {
+            "id": "tiktok-3",
+            "platform": "TikTok",
+            "url": "https://www.tiktok.com/@camidevai/video/7453079647580916997",
+            "image": "assets/images/performance/tiktok-3.png",
+            "views": "1.1M",
+            "viewsValue": 1100000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Video destacado · TikTok",
+                "en": "Featured video · TikTok"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/09/20/imageff3912252be5631f.png",
+            "verification": "Preserved original portfolio link, image and view count. Not independently reverified on the platform."
+        },
+        {
+            "id": "instagram-julio",
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/share/BAA3SnA2OV",
+            "image": "assets/images/performance/instagram-julio.jpg",
+            "views": "1.0M",
+            "viewsValue": 1000000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Becas de Talento Digital",
+                "en": "Talento Digital scholarships"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.21.49_7d04ef28.jpg",
+            "resolvedUrl": "https://www.instagram.com/reel/DMYp8MRSKrg/?igsh=QkFNOGFmVkp3Vg%3D%3D",
+            "postReviewedAt": "2026-10-12",
+            "verification": "Public Instagram post author, caption and publication date checked. Current views and attributed followers unavailable without Insights.",
+            "date": "2025-07-21",
+            "dateLabel": {
+                "es": "21 jul 2025",
+                "en": "Jul 21, 2025"
+            }
+        },
+        {
+            "id": "facebook-2",
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/share/r/1Grbk3YudU/?mibextid=wwXIfr",
+            "image": "assets/images/performance/facebook-2.png",
+            "views": "421K",
+            "viewsValue": 421000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Video destacado · Facebook",
+                "en": "Featured video · Facebook"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/09/20/image64fac5531aa189b6.png",
+            "verification": "Preserved original portfolio link, image and view count. Not independently reverified on the platform."
+        },
+        {
+            "id": "facebook-3",
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/share/r/167CHGdMYx/?mibextid=wwXIfr",
+            "image": "assets/images/performance/facebook-3.png",
+            "views": "406K",
+            "viewsValue": 406000,
+            "viewsPeriod": "2025",
+            "viewsSource": "Original MediaKit portfolio records from 2025.",
+            "viewsVerifiedCurrent": false,
+            "followersAttributed": null,
+            "title": {
+                "es": "Video destacado · Facebook",
+                "en": "Featured video · Facebook"
+            },
+            "imageSource": "https://subir-imagen.com/images/2025/09/20/imagec4b7dd2debe7bc71.png",
+            "verification": "Preserved original portfolio link, image and view count. Not independently reverified on the platform."
         }
     ]
 };
