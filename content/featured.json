@@ -1,0 +1,162 @@
+{
+  "reviewedAt": "2026-10-12",
+  "selection": "Editorial selection from public Instagram posts, not a ranking by views.",
+  "posts": [
+    {
+      "id": "hp",
+      "image": "assets/images/featured/hp-copilot.jpg",
+      "url": "https://www.instagram.com/camidevai/reel/DbGCv1ExCCM/",
+      "date": "2026-07-22",
+      "format": "Reel",
+      "category": {
+        "es": "Marcas y tecnología",
+        "en": "Brands and technology"
+      },
+      "title": {
+        "es": "La IA ya está en tu PC",
+        "en": "AI is already on your PC"
+      },
+      "description": {
+        "es": "Demostración de una Copilot+ PC de HP y sus funciones para el trabajo diario.",
+        "en": "A hands-on look at an HP Copilot+ PC and its features for everyday work."
+      },
+      "dateLabel": {
+        "es": "22 jul 2026",
+        "en": "Jul 22, 2026"
+      },
+      "platform": "Instagram",
+      "reviewedAt": "2026-10-12",
+      "verification": "Public Instagram post, caption and cover inspected in browser. Views not publicly verified."
+    },
+    {
+      "id": "apob",
+      "image": "assets/images/featured/apob-sailor-moon.jpg",
+      "url": "https://www.instagram.com/camidevai/reel/DeYf7cbuysa/",
+      "date": "2026-10-11",
+      "format": "Reel",
+      "category": {
+        "es": "Tutorial · APOB",
+        "en": "Tutorial · APOB"
+      },
+      "title": {
+        "es": "Transfórmate en Sailor Moon",
+        "en": "Transform into Sailor Moon"
+      },
+      "description": {
+        "es": "Un tutorial de transformación con dos imágenes y video generado con APOB AI.",
+        "en": "A transformation tutorial using two images and AI-generated video with APOB."
+      },
+      "dateLabel": {
+        "es": "11 oct 2026",
+        "en": "Oct 11, 2026"
+      },
+      "platform": "Instagram",
+      "reviewedAt": "2026-10-12",
+      "verification": "Public Instagram post, caption and cover inspected in browser. Views not publicly verified."
+    },
+    {
+      "id": "expo",
+      "image": "assets/images/featured/expo-mercado-publico.jpg",
+      "url": "https://www.instagram.com/camidevai/p/DdFThezESfq/",
+      "date": "2026-09-09",
+      "format": "Post",
+      "category": {
+        "es": "Charlas · CCHIA",
+        "en": "Speaking · CCHIA"
+      },
+      "title": {
+        "es": "Expo Mercado Público 2026",
+        "en": "Expo Mercado Público 2026"
+      },
+      "description": {
+        "es": "Participación en un panel sobre tecnología, educación y regulación, representando a la CCHIA.",
+        "en": "A panel on technology, education and regulation, representing CCHIA."
+      },
+      "dateLabel": {
+        "es": "9 sep 2026",
+        "en": "Sep 9, 2026"
+      },
+      "platform": "Instagram",
+      "reviewedAt": "2026-10-12",
+      "verification": "Public Instagram post, caption and cover inspected in browser. Views not publicly verified."
+    },
+    {
+      "id": "informatik",
+      "image": "assets/images/featured/informatik-futuro-trabajo.jpg",
+      "url": "https://www.instagram.com/informatik.ai/p/Dd0RYekkWW-/",
+      "date": "2026-09-27",
+      "format": "Post",
+      "category": {
+        "es": "Empresas · Informatik-AI",
+        "en": "Business · Informatik-AI"
+      },
+      "title": {
+        "es": "IA y el futuro del trabajo",
+        "en": "AI and the future of work"
+      },
+      "description": {
+        "es": "La propuesta de una charla para empresas sobre adopción de IA, procesos y nuevas competencias.",
+        "en": "A talk for companies about AI adoption, workflows and new skills."
+      },
+      "dateLabel": {
+        "es": "27 sep 2026",
+        "en": "Sep 27, 2026"
+      },
+      "platform": "Instagram",
+      "reviewedAt": "2026-10-12",
+      "verification": "Public Instagram post, caption and cover inspected in browser. Views not publicly verified."
+    },
+    {
+      "id": "claude",
+      "image": "assets/images/featured/claude-carrusel.jpg",
+      "url": "https://www.instagram.com/camidevai/p/DeVmZ9agGnm/",
+      "date": "2026-10-10",
+      "format": "Post",
+      "category": {
+        "es": "Divulgación de IA",
+        "en": "AI communication"
+      },
+      "title": {
+        "es": "Claude: reglas y conversación",
+        "en": "Claude: rules and conversation"
+      },
+      "description": {
+        "es": "Un carrusel sobre la actualización de políticas de Anthropic y el debate que abrió en la comunidad.",
+        "en": "A carousel about Anthropic’s policy update and the conversation it sparked."
+      },
+      "dateLabel": {
+        "es": "10 oct 2026",
+        "en": "Oct 10, 2026"
+      },
+      "platform": "Instagram",
+      "reviewedAt": "2026-10-12",
+      "verification": "Public Instagram post, caption and cover inspected in browser. Views not publicly verified."
+    },
+    {
+      "id": "story",
+      "image": "assets/images/featured/cami-2019-2026.jpg",
+      "url": "https://www.instagram.com/camidevai/p/DeW_LeKEQEM/",
+      "date": "2026-10-11",
+      "format": "Post",
+      "category": {
+        "es": "Creatividad y storytelling",
+        "en": "Creativity and storytelling"
+      },
+      "title": {
+        "es": "Mi yo de 2019 conoce a mi yo actual",
+        "en": "My 2019 self meets my current self"
+      },
+      "description": {
+        "es": "Una historia personal convertida en un carrusel con IA, diálogo y narrativa visual.",
+        "en": "A personal story turned into an AI carousel with dialogue and visual storytelling."
+      },
+      "dateLabel": {
+        "es": "11 oct 2026",
+        "en": "Oct 11, 2026"
+      },
+      "platform": "Instagram",
+      "reviewedAt": "2026-10-12",
+      "verification": "Public Instagram post, caption and cover inspected in browser. Views not publicly verified."
+    }
+  ]
+}

@@ -1,896 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CamiDevAI | Camila Daniela Bañares Carrasco · Media Kit</title>
-    <meta name="description" content="Media kit de Camila Daniela Bañares Carrasco, CamiDevAI. Ingeniera, educadora y speaker de IA; vicepresidenta CCHIA, CMO de Informatik-AI y embajadora de HeyGen y APOB.">
-    <meta property="og:title" content="CamiDevAI · Camila Daniela Bañares Carrasco">
-    <meta property="og:description" content="Charlas, cursos, campañas para marcas y proyectos con inteligencia artificial.">
-    <meta property="og:type" content="website">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            if (window.emailjs) emailjs.init('1aZEaVP20Ayfhpkp0');
-        })();
-    </script>
-    <noscript>
-        <style>.fade-in, .slide-in-left, .slide-in-right, .scale-in { opacity: 1; transform: none; }</style>
-    </noscript>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>CamiDevAI · Camila Daniela Bañares Carrasco | Media Kit</title>
+  <meta name="description" content="Camila Daniela Bañares Carrasco, CamiDevAI. Charlas y cursos de inteligencia artificial, contenido para marcas y proyectos con Informatik-AI.">
+  <meta property="og:title" content="CamiDevAI · Camila Daniela Bañares Carrasco">
+  <meta property="og:description" content="Charlas, cursos, campañas y proyectos con inteligencia artificial.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script defer src="assets/js/config.js"></script>
+  <script defer src="assets/js/translations.js"></script>
+  <script defer src="assets/js/main.js"></script>
 </head>
-
 <body>
-    <!-- HERO -->
-    <header class="hero fade-in visible">
-        <div class="lang-switcher">
-            <button id="lang-es">ES</button>
-            <button id="lang-en">EN</button>
+  <a href="#main" class="skip-link"><span  data-translate-key="skipLink">Ir al contenido</span></a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="CamiDevAI, inicio"><span class="brand-symbol" aria-hidden="true">C.</span>CamiDevAI</a>
+      <nav aria-label="Navegación principal">
+        <a href="#featured-content"><span  data-translate-key="navWork">Mi trabajo</span></a>
+        <a href="#services"><span  data-translate-key="navServices">Servicios</span></a>
+        <a href="#about"><span  data-translate-key="navAbout">Sobre mí</span></a>
+        <a href="#contact"><span  data-translate-key="navContact">Contacto</span></a>
+      </nav>
+      <div class="lang-switcher" aria-label="Idioma / Language">
+        <button id="lang-es" type="button" class="active" aria-pressed="true" lang="es">ES</button>
+        <button id="lang-en" type="button" aria-pressed="false" lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow hero-name">Camila Daniela Bañares Carrasco</p>
+        <h1><span  data-translate-key="heroHeadline1">Explico IA fácil.</span><br><span class="accent" data-translate-key="heroHeadline2">Creo soluciones reales.</span></h1>
+        <p class="hero-description" data-translate-key="heroDescription">Ingeniera en Informática, educadora y speaker. Te ayudo a entender la inteligencia artificial y llevarla a tu equipo, tu marca o tu próximo proyecto.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#contact"><span  data-translate-key="heroPrimary">Conversemos</span> <span aria-hidden="true">→</span></a>
+          <a class="button secondary" href="#featured-content"><span  data-translate-key="heroSecondary">Ver mi trabajo</span></a>
         </div>
-
-        <!-- Emoticones flotantes -->
-        <div class="floating-emojis">
-            <div class="floating-emoji facebook">👍</div>
-            <div class="floating-emoji instagram">❤️</div>
-            <div class="floating-emoji tiktok">🎵</div>
-            <div class="floating-emoji facebook">😍</div>
-            <div class="floating-emoji instagram">📸</div>
-            <div class="floating-emoji tiktok">🔥</div>
-            <div class="floating-emoji facebook">👏</div>
-            <div class="floating-emoji instagram">✨</div>
-            <div class="floating-emoji tiktok">💫</div>
+        <div class="brand-roles"><span  data-translate-key="heroRoleCchia">Vicepresidenta CCHIA</span><span  data-translate-key="heroRoleInformatik">CMO · Informatik-AI</span><span  data-translate-key="heroRoleAmbassador">Embajadora de HeyGen y APOB</span></div>
+      </div>
+      <figure class="hero-portrait">
+        <div class="portrait-frame"><img src="assets/images/cami-profile.jpg" alt="Camila Daniela Bañares Carrasco, CamiDevAI" width="320" height="320" fetchpriority="high"></div>
+        <figcaption><span class="portrait-kicker" data-translate-key="heroPortraitLabel">La persona detrás de CamiDevAI</span><strong>CamiDevAI</strong><span class="portrait-descriptor" data-translate-key="brandDescriptor">IA · TECNOLOGÍA · CREATIVIDAD</span></figcaption>
+      </figure>
+    </section>
+    <section id="stats" class="container community-section" aria-labelledby="community-title">
+      <h2 id="community-title" class="sr-only" data-translate-key="statsTitle">Comunidad e impacto</h2>
+      <div class="metrics-strip">
+        <div class="metric"><strong data-stat-key="community">500K+</strong><span  data-translate-key="statsCommunity">Comunidad en redes sociales</span></div>
+        <div class="metric"><strong data-stat-key="instagram">287K</strong><span  data-translate-key="statsFollowersIG">Seguidores en Instagram</span></div>
+        <div class="metric"><strong data-stat-key="bestVideo">8.6M</strong><span  data-translate-key="statsBestVideo">Visualizaciones · portafolio 2025</span></div>
+      </div>
+      <details class="metrics-sources"><summary><span  data-translate-key="metricsSummary">Fuentes y períodos de las cifras</span></summary><p  data-translate-key="metricsNote">500K+: comunidad declarada en LinkedIn. 287K: cifra pública redondeada de Instagram, revisada el 12 de octubre de 2026. 8.6M: resultado histórico registrado en el portafolio de 2025.</p><a href="https://www.linkedin.com/in/camilabanares/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="metricsLinkedinLink">Consultar LinkedIn</span></a> · <a href="https://www.instagram.com/camidevai/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="metricsInstagramLink">Consultar Instagram</span></a></details>
+    </section>
+    <section id="featured-content" class="section container">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-translate-key="workKicker">UNA MUESTRA DE MI TRABAJO</p><h2  data-translate-key="featuredTitle">Ideas que se ven en acción.</h2><p class="section-description" data-translate-key="featuredNote">Tutoriales, colaboraciones y charlas. Seis publicaciones de 2026 para conocer cómo comunico y qué puedo crear contigo.</p></div>
+        <a class="text-link" href="https://www.instagram.com/camidevai/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="featuredMore">Ver más en Instagram</span> <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="featured-grid"><article class="featured-card" data-feature-id="hp">
+      <a class="featured-cover" href="https://www.instagram.com/camidevai/reel/DbGCv1ExCCM/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/featured/hp-copilot.jpg" alt="La IA ya está en tu PC — CamiDevAI" data-alt-key="feature_hp_title" width="640" height="800" loading="lazy" decoding="async">
+        <span class="format-pill">Reel <span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="featured-copy">
+        <div class="featured-meta"><span  data-translate-key="feature_hp_category">Marcas y tecnología</span> · <time datetime="2026-07-22" data-translate-key="feature_hp_dateLabel">22 jul 2026</time></div>
+        <h3  data-translate-key="feature_hp_title">La IA ya está en tu PC</h3>
+        <p  data-translate-key="feature_hp_description">Demostración de una Copilot+ PC de HP y sus funciones para el trabajo diario.</p>
+        <a class="text-link" href="https://www.instagram.com/camidevai/reel/DbGCv1ExCCM/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="featureOpen">Ver publicación</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article><article class="featured-card" data-feature-id="apob">
+      <a class="featured-cover" href="https://www.instagram.com/camidevai/reel/DeYf7cbuysa/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/featured/apob-sailor-moon.jpg" alt="Transfórmate en Sailor Moon — CamiDevAI" data-alt-key="feature_apob_title" width="640" height="800" loading="lazy" decoding="async">
+        <span class="format-pill">Reel <span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="featured-copy">
+        <div class="featured-meta"><span  data-translate-key="feature_apob_category">Tutorial · APOB</span> · <time datetime="2026-10-11" data-translate-key="feature_apob_dateLabel">11 oct 2026</time></div>
+        <h3  data-translate-key="feature_apob_title">Transfórmate en Sailor Moon</h3>
+        <p  data-translate-key="feature_apob_description">Un tutorial de transformación con dos imágenes y video generado con APOB AI.</p>
+        <a class="text-link" href="https://www.instagram.com/camidevai/reel/DeYf7cbuysa/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="featureOpen">Ver publicación</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article><article class="featured-card" data-feature-id="expo">
+      <a class="featured-cover" href="https://www.instagram.com/camidevai/p/DdFThezESfq/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/featured/expo-mercado-publico.jpg" alt="Expo Mercado Público 2026 — CamiDevAI" data-alt-key="feature_expo_title" width="640" height="800" loading="lazy" decoding="async">
+        <span class="format-pill">Post <span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="featured-copy">
+        <div class="featured-meta"><span  data-translate-key="feature_expo_category">Charlas · CCHIA</span> · <time datetime="2026-09-09" data-translate-key="feature_expo_dateLabel">9 sep 2026</time></div>
+        <h3  data-translate-key="feature_expo_title">Expo Mercado Público 2026</h3>
+        <p  data-translate-key="feature_expo_description">Participación en un panel sobre tecnología, educación y regulación, representando a la CCHIA.</p>
+        <a class="text-link" href="https://www.instagram.com/camidevai/p/DdFThezESfq/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="featureOpen">Ver publicación</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article><article class="featured-card" data-feature-id="informatik">
+      <a class="featured-cover" href="https://www.instagram.com/informatik.ai/p/Dd0RYekkWW-/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/featured/informatik-futuro-trabajo.jpg" alt="IA y el futuro del trabajo — CamiDevAI" data-alt-key="feature_informatik_title" width="640" height="800" loading="lazy" decoding="async">
+        <span class="format-pill">Post <span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="featured-copy">
+        <div class="featured-meta"><span  data-translate-key="feature_informatik_category">Empresas · Informatik-AI</span> · <time datetime="2026-09-27" data-translate-key="feature_informatik_dateLabel">27 sep 2026</time></div>
+        <h3  data-translate-key="feature_informatik_title">IA y el futuro del trabajo</h3>
+        <p  data-translate-key="feature_informatik_description">La propuesta de una charla para empresas sobre adopción de IA, procesos y nuevas competencias.</p>
+        <a class="text-link" href="https://www.instagram.com/informatik.ai/p/Dd0RYekkWW-/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="featureOpen">Ver publicación</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article><article class="featured-card" data-feature-id="claude">
+      <a class="featured-cover" href="https://www.instagram.com/camidevai/p/DeVmZ9agGnm/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/featured/claude-carrusel.jpg" alt="Claude: reglas y conversación — CamiDevAI" data-alt-key="feature_claude_title" width="640" height="800" loading="lazy" decoding="async">
+        <span class="format-pill">Post <span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="featured-copy">
+        <div class="featured-meta"><span  data-translate-key="feature_claude_category">Divulgación de IA</span> · <time datetime="2026-10-10" data-translate-key="feature_claude_dateLabel">10 oct 2026</time></div>
+        <h3  data-translate-key="feature_claude_title">Claude: reglas y conversación</h3>
+        <p  data-translate-key="feature_claude_description">Un carrusel sobre la actualización de políticas de Anthropic y el debate que abrió en la comunidad.</p>
+        <a class="text-link" href="https://www.instagram.com/camidevai/p/DeVmZ9agGnm/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="featureOpen">Ver publicación</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article><article class="featured-card" data-feature-id="story">
+      <a class="featured-cover" href="https://www.instagram.com/camidevai/p/DeW_LeKEQEM/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/featured/cami-2019-2026.jpg" alt="Mi yo de 2019 conoce a mi yo actual — CamiDevAI" data-alt-key="feature_story_title" width="640" height="800" loading="lazy" decoding="async">
+        <span class="format-pill">Post <span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="featured-copy">
+        <div class="featured-meta"><span  data-translate-key="feature_story_category">Creatividad y storytelling</span> · <time datetime="2026-10-11" data-translate-key="feature_story_dateLabel">11 oct 2026</time></div>
+        <h3  data-translate-key="feature_story_title">Mi yo de 2019 conoce a mi yo actual</h3>
+        <p  data-translate-key="feature_story_description">Una historia personal convertida en un carrusel con IA, diálogo y narrativa visual.</p>
+        <a class="text-link" href="https://www.instagram.com/camidevai/p/DeW_LeKEQEM/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="featureOpen">Ver publicación</span> <span aria-hidden="true">↗</span></a>
+      </div>
+    </article></div>
+    </section>
+    <section id="services" class="services-section">
+      <div class="container section">
+        <p class="eyebrow" data-translate-key="servicesKicker">CÓMO PODEMOS TRABAJAR</p><h2  data-translate-key="servicesTitle">Tu próxima idea, con IA.</h2><p class="section-description" data-translate-key="servicesSubtitle">Contenido, aprendizaje y desarrollo, con un enfoque claro y práctico.</p>
+        <div class="services-grid"><article class="service-card" id="speaking">
+      <span class="service-number">01</span>
+      <h3  data-translate-key="serviceTalkTitle">Charlas y capacitación</h3>
+      <p  data-translate-key="serviceTalkDescription">Charlas, talleres y cursos adaptados a tu evento, empresa o institución.</p>
+      <ul><li><span  data-translate-key="serviceTalkBullet1">Demostraciones y ejercicios</span></li><li><span  data-translate-key="serviceTalkBullet2">Contenidos según tu equipo</span></li></ul>
+      <a href="#contact" class="text-link"><span  data-translate-key="serviceTalkCTA">Organizar una charla</span> <span aria-hidden="true">↗</span></a>
+    </article><article class="service-card" id="package">
+      <span class="service-number">02</span>
+      <h3  data-translate-key="serviceBrandTitle">Campañas y contenido</h3>
+      <p  data-translate-key="serviceBrandDescription">Tutoriales y piezas audiovisuales que muestran cómo se usa y qué aporta tu producto.</p>
+      <ul><li><span  data-translate-key="serviceBrandBullet1">Reels y demostraciones</span></li><li><span  data-translate-key="serviceBrandBullet2">Contenido educativo y corporativo</span></li></ul>
+      <a href="#contact" class="text-link"><span  data-translate-key="serviceBrandCTA">Crear una colaboración</span> <span aria-hidden="true">↗</span></a>
+    </article><article class="service-card" id="web-services">
+      <span class="service-number">03</span>
+      <h3  data-translate-key="serviceTechTitle">Proyectos con Informatik-AI</h3>
+      <p  data-translate-key="serviceTechDescription">Desarrollo de software, plataformas y automatizaciones para procesos concretos.</p>
+      <ul><li><span  data-translate-key="serviceTechBullet1">Aplicaciones y soluciones web</span></li><li><span  data-translate-key="serviceTechBullet2">Integración de herramientas e IA</span></li></ul>
+      <a href="#contact" class="text-link"><span  data-translate-key="serviceTechCTA">Conversar sobre un proyecto</span> <span aria-hidden="true">↗</span></a>
+    </article></div>
+      </div>
+    </section>
+    <section id="about" class="section container about-layout">
+      <div class="about-copy"><p class="eyebrow" data-translate-key="aboutKicker">TECNOLOGÍA CON UNA VOZ CERCANA</p><h2  data-translate-key="aboutTitle">Hola, soy Cami.</h2><p  data-translate-key="aboutText">Soy Camila Daniela Bañares Carrasco, la persona detrás de CamiDevAI. Conecto mi experiencia en ingeniería con la creación de contenido para enseñar a usar la IA de forma clara y práctica. Trabajo con personas, marcas y organizaciones que quieren aprender, comunicar y desarrollar proyectos con tecnología.</p><p class="about-mission" data-translate-key="aboutMission">Me gusta que la tecnología sirva para algo concreto: aprender, crear o resolver un problema.</p><a class="text-link" href="https://www.linkedin.com/in/camilabanares/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="aboutLinkedin">Conoce mi trayectoria en LinkedIn</span> <span aria-hidden="true">↗</span></a></div>
+      <div class="credentials-section"><h3  data-translate-key="credentialsTitle">Formación y roles actuales</h3><div class="credentials-grid"><article class="credential-card">
+        <span class="credential-mark" aria-hidden="true">✓</span><div><h4  data-translate-key="credentialEngineering">Ingeniera en Informática</h4><p  data-translate-key="credentialEngineeringDesc">Formación en ciberseguridad.</p></div>
+      </article>
+<article class="credential-card">
+        <span class="credential-mark" aria-hidden="true">✓</span><div><h4  data-translate-key="credentialPostgraduate">Posgrado en Inteligencia Artificial</h4><p  data-translate-key="credentialPostgraduateDesc">Especialización en IA.</p></div>
+      </article>
+<article class="credential-card">
+        <span class="credential-mark" aria-hidden="true">✓</span><div><h4  data-translate-key="credentialEvaluation">Evaluadora ChileValora</h4><p  data-translate-key="credentialEvaluationDesc">Evaluación de competencias laborales.</p></div>
+      </article>
+<article class="credential-card">
+        <span class="credential-mark" aria-hidden="true">✓</span><div><h4  data-translate-key="credentialBootcamps">Formación complementaria</h4><p  data-translate-key="credentialBootcampsDesc">Bootcamps y aprendizaje continuo en tecnología.</p></div>
+      </article>
+<article class="credential-card">
+        <span class="credential-mark" aria-hidden="true">✓</span><div><h4  data-translate-key="credentialCchia">Vicepresidenta de la CCHIA</h4><p  data-translate-key="credentialCchiaDesc">Cámara Chilena de Inteligencia Artificial.</p></div>
+      </article>
+<article class="credential-card">
+        <span class="credential-mark" aria-hidden="true">✓</span><div><h4  data-translate-key="credentialInformatik">CMO y fundadora de Informatik-AI</h4><p  data-translate-key="credentialInformatikDesc">Desarrollo de software y soluciones con IA.</p></div>
+      </article>
+<article class="credential-card">
+        <span class="credential-mark" aria-hidden="true">✓</span><div><h4  data-translate-key="credentialAmbassador">Embajadora de HeyGen y APOB</h4><p  data-translate-key="credentialAmbassadorDesc">Creación de contenido y video con IA.</p></div>
+      </article></div></div>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="container section contact-layout">
+        <div class="contact-copy"><p class="eyebrow" data-translate-key="contactKicker">HABLEMOS</p><h2  data-translate-key="contactTitle">¿Qué creamos juntos?</h2><p  data-translate-key="contactIntro">Cuéntame tu idea, el objetivo y las fechas. Podemos trabajar en una charla, un curso, una campaña o un proyecto con IA.</p><div class="contact-actions"><a class="button primary" href="mailto:camidevai@gmail.com"><span  data-translate-key="contactEmail">Escríbeme</span> <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/camilabanares/" target="_blank" rel="noopener noreferrer"><span  data-translate-key="contactLinkedin">Conectar en LinkedIn</span> <span aria-hidden="true">↗</span></a></div><a class="contact-address" href="mailto:camidevai@gmail.com">camidevai@gmail.com</a></div>
+        <div class="proposal-card">
+          <h3  data-translate-key="formDetails">O envíame una propuesta desde aquí</h3>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row"><div class="form-group"><label for="from_name" data-translate-key="formNameLabel">Tu nombre</label><input type="text" id="from_name" name="from_name" autocomplete="name" required></div><div class="form-group"><label for="brand_name" data-translate-key="formBrandLabel">Marca u organización</label><input type="text" id="brand_name" name="brand_name" autocomplete="organization" required></div></div>
+            <div class="form-group"><label for="reply_to" data-translate-key="formEmailLabel">Tu correo</label><input type="email" id="reply_to" name="reply_to" autocomplete="email" required></div>
+            <div class="form-group"><label for="message" data-translate-key="formMessageLabel">Cuéntame tu idea</label><textarea id="message" name="message" rows="4" required></textarea></div>
+            <button type="submit" id="submit-btn" class="button primary"><span  data-translate-key="formSubmitButton">Enviar propuesta</span> <span aria-hidden="true">→</span></button>
+            <p id="form-message" role="status" aria-live="polite"></p>
+          </form>
         </div>
-
-        <div class="hero-content">
-            <p class="hero-kicker">Camila Daniela Bañares Carrasco</p>
-            <h1 class="animated-gradient-text">CamiDevAI</h1>
-            <h2 data-translate-key="heroSubtitle">Ingeniera en Informática · Educadora y speaker de IA</h2>
-            <p class="mission" data-translate-key="heroMission">Te ayudo a llevar la inteligencia artificial a la práctica: en tu equipo, tu marca y tus proyectos.</p>
-
-            <div class="brand-roles">
-                <span data-translate-key="heroRoleCchia">Vicepresidenta CCHIA</span>
-                <span data-translate-key="heroRoleInformatik">CMO y fundadora de Informatik-AI</span>
-                <span data-translate-key="heroRoleAmbassador">Embajadora de HeyGen y APOB</span>
-            </div>
-            <div class="hero-buttons">
-                <a href="#speaking" class="cta-button primary" data-translate-key="heroCTA">Charlas y capacitaciones</a>
-                <a href="#web-services" class="cta-button secondary" data-translate-key="webServicesButton">Proyectos con IA</a>
-                <a href="#package" class="cta-button tertiary" data-translate-key="collaborateButton">Colaboraciones con marcas</a>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <!-- SOBRE MÍ -->
-        <section id="about" class="section container fade-in">
-            <h2 class="section-title scale-in" data-translate-key="aboutTitle">Hola, soy Cami</h2>
-
-            <div class="about-container">
-                <!-- Perfil -->
-                <div class="about-profile">
-                    <div class="profile-image-wrapper">
-                        <img src="https://subir-imagen.com/images/2025/08/30/Imagen-de-WhatsApp-2025-08-30-a-las-21.41.32_9af8b5c0.md.jpg"
-                            alt="Camila Daniela Bañares Carrasco, CamiDevAI" class="profile-image slide-in-left"
-                            onerror="this.onerror=null; this.src='https://placehold.co/300x300/1a1a1a/00CED1?text=Cami';">
-                    </div>
-
-                    <div class="profile-info">
-                        <h3 class="profile-name">Camila Daniela<br>Bañares Carrasco</h3>
-                        <p class="profile-role" data-translate-key="profileRole">Creadora de contenido tecnológico · CamiDevAI</p>
-
-                        <div class="profile-stats">
-                            <div class="stat">
-                                <span class="stat-number" data-stat-key="community">500K+</span>
-                                <span class="stat-label" data-translate-key="profileCommunity">Comunidad en redes</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">IA</span>
-                                <span class="stat-label" data-translate-key="profileFocus">Tecnología y educación</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contenido Sobre Mí -->
-                <div class="about-content slide-in-right">
-                    <div class="about-text">
-                        <p data-translate-key="aboutText">Soy Camila Daniela Bañares Carrasco, la persona detrás de CamiDevAI. Conecto mi experiencia en ingeniería con la creación de contenido para enseñar a usar la IA de forma clara y práctica. Trabajo con personas, marcas y organizaciones que quieren aprender, comunicar y desarrollar proyectos con tecnología.</p>
-                    </div>
-
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🤖</span>
-                            <span class="highlight-text" data-translate-key="highlightEducation">Educación en IA</span>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">💡</span>
-                            <span class="highlight-text" data-translate-key="highlightAutomation">Automatización</span>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🌟</span>
-                            <span class="highlight-text" data-translate-key="highlightVideo">Creación audiovisual</span>
-                        </div>
-                    </div>
-
-                    <!-- Redes Sociales -->
-                    <div class="social-links" aria-label="Redes sociales de Camidevai">
-                        <!-- Instagram -->
-                        <a href="https://www.instagram.com/camidevai/" target="_blank" rel="noopener noreferrer"
-                            class="social-link instagram" title="Instagram">
-                            <span class="social-icon">
-                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7Z"
-                                        stroke="currentColor" stroke-width="2" />
-                                    <path
-                                        d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
-                                        stroke="currentColor" stroke-width="2" />
-                                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-                                </svg>
-                            </span>
-                        </a>
-
-                        <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/camilabanares/" target="_blank" rel="noopener noreferrer"
-                            class="social-link linkedin" title="LinkedIn" aria-label="LinkedIn de Camila Daniela Bañares Carrasco">
-                            <span class="social-icon">
-                                <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M20.45 2H3.55C2.7 2 2 2.67 2 3.5v17c0 .83.7 1.5 1.55 1.5h16.9c.85 0 1.55-.67 1.55-1.5v-17c0-.83-.7-1.5-1.55-1.5zM8 19H5V9h3v10zM6.5 7.7a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5zM19 19h-3v-5.1c0-1.3-.5-2-1.5-2s-1.5.7-1.5 2V19h-3V9h3v1.4c.6-1 1.6-1.6 2.8-1.6 2.2 0 3.2 1.5 3.2 4.3V19z" />
-                                </svg>
-                            </span>
-                        </a>
-                        <!-- Threads -->
-                        <a href="https://www.threads.com/@camidevai" target="_blank" rel="noopener noreferrer"
-                            class="social-link threads" title="Threads">
-                            <span class="social-icon">
-                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 
-                                10-10S17.52 2 12 2zm3.43 14.14c-.59.91-1.52 
-                                1.57-2.74 1.86v1.12h-1.38v-1.1c-1.43-.2-2.49-.91-3.2-2.12l1.35-.78c.41.72 1 
-                                1.17 1.87 1.35v-2.9c-1.17-.33-2.02-.77-2.57-1.32-.55-.55-.83-1.26-.83-2.15 
-                                0-.89.28-1.62.83-2.18.55-.56 1.33-.92 2.33-1.08V5h1.38v1.04c1.18.18 
-                                2.09.75 2.72 1.71l-1.29.82c-.36-.58-.86-.97-1.45-1.16v2.57c1.22.32 
-                                2.11.78 2.66 1.36.55.58.83 1.33.83 2.24 0 .92-.29 1.67-.86 2.25z" />
-                                </svg>
-                            </span>
-                        </a>
-
-                        <!-- Facebook -->
-                        <a href="https://www.facebook.com/profile.php?id=61564523003680" target="_blank"
-                            rel="noopener noreferrer" class="social-link facebook" title="Facebook">
-                            <span class="social-icon">
-                                <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M22 12.069C22 6.495 17.523 2 12 2S2 6.495 2 12.069c0 5.027 3.657 9.205 
-                                8.438 9.93v-7.03H7.898v-2.9h2.54V9.845c0-2.506 1.492-3.89 
-                                3.777-3.89 1.094 0 2.238.195 2.238.195v2.47h-1.26c-1.242 0-1.63.774-1.63 
-                                1.562v1.875h2.773l-.443 2.9h-2.33v7.03C18.343 21.274 22 17.096 22 12.069z" />
-                                </svg>
-                            </span>
-                        </a>
-
-                        <!-- TikTok -->
-                        <a href="https://www.tiktok.com/@camidevai" target="_blank" rel="noopener noreferrer"
-                            class="social-link tiktok" title="TikTok">
-                            <span class="social-icon">
-                                <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20.5 7.09c-1.29-.05-2.54-.45-3.62-1.17A5.89 5.89 0 0 1 
-                                15 3h-2v12.13a2.43 2.43 0 1 1-2.43-2.42c.2 0 .39.02.57.06V10a5.43 5.43 0 
-                                1 0 3.43 5.03V7.7c1.13.78 2.49 1.24 3.93 1.29v-1.9z" />
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="credentials-section">
-                <h3 class="conference-title" data-translate-key="credentialsTitle">Formación y trayectoria</h3>
-                <div class="credentials-grid">
-                    <article class="credential-card">
-                        <h4 data-translate-key="credentialEngineering">Ingeniera en Informática</h4>
-                        <p data-translate-key="credentialEngineeringDesc">Formación en ciberseguridad.</p>
-                    </article>
-                    <article class="credential-card">
-                        <h4 data-translate-key="credentialPostgraduate">Posgrado en Inteligencia Artificial</h4>
-                        <p data-translate-key="credentialPostgraduateDesc">Especialización en IA.</p>
-                    </article>
-                    <article class="credential-card">
-                        <h4 data-translate-key="credentialEvaluation">Evaluadora ChileValora</h4>
-                        <p data-translate-key="credentialEvaluationDesc">Evaluación de competencias laborales.</p>
-                    </article>
-                    <article class="credential-card">
-                        <h4 data-translate-key="credentialBootcamps">Formación complementaria</h4>
-                        <p data-translate-key="credentialBootcampsDesc">Bootcamps y aprendizaje continuo en tecnología.</p>
-                    </article>
-                    <article class="credential-card">
-                        <h4 data-translate-key="credentialCchia">Vicepresidenta de la CCHIA</h4>
-                        <p data-translate-key="credentialCchiaDesc">Cámara Chilena de Inteligencia Artificial.</p>
-                    </article>
-                    <article class="credential-card">
-                        <h4 data-translate-key="credentialInformatik">CMO y fundadora de Informatik-AI</h4>
-                        <p data-translate-key="credentialInformatikDesc">Desarrollo de software y soluciones con IA.</p>
-                    </article>
-                    <article class="credential-card">
-                        <h4 data-translate-key="credentialAmbassador">Embajadora de HeyGen y APOB</h4>
-                        <p data-translate-key="credentialAmbassadorDesc">Creación de contenido y video con IA.</p>
-                    </article>
-                </div>
-                <a class="text-link" href="https://www.linkedin.com/in/camilabanares/" target="_blank" rel="noopener noreferrer" data-translate-key="credentialsLink">Ver experiencia y credenciales en LinkedIn</a>
-            </div>
-
-            <!-- Galería de Conferencias -->
-            <div class="conference-section">
-                <h3 class="conference-title" data-translate-key="galleryTitle">Ponente en Eventos de Tecnología</h3>
-
-                <div class="conference-gallery">
-                    <div class="conference-item">
-                        <img src="https://subir-imagen.com/images/2025/08/30/Captura-de-pantalla-2025-08-30-221353.md.png"
-                            alt="Camila Daniela Bañares Carrasco en un evento de tecnología" class="conference-img"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x300/1a1a1a/00CED1?text=Tech+Award';">
-                        <div class="conference-label" data-translate-key="conferenceAward">Participación en eventos de tecnología</div>
-                    </div>
-
-                    <div class="conference-item">
-                        <img src="https://subir-imagen.com/images/2025/08/30/Imagen-de-WhatsApp-2025-08-30-a-las-22.17.04_d70ab43c.md.jpg"
-                            alt="Cami en panel de expertas de informática" class="conference-img"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x500/1a1a1a/00CED1?text=Expert+Panel';">
-                        <div class="conference-label" data-translate-key="conferencePanel">👩‍💻 Panel de Expertas</div>
-                    </div>
-
-                    <div class="conference-item">
-                        <img src="https://subir-imagen.com/images/2025/08/30/Imagen-de-WhatsApp-2025-08-30-a-las-22.08.20_14ff56ff.md.jpg"
-                            alt="Cami dando una charla sobre IA" class="conference-img"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x300/1a1a1a/00CED1?text=AI+Talk';">
-                        <div class="conference-label" data-translate-key="conferenceSpeaker">Charlas sobre inteligencia artificial</div>
-                    </div>
-
-                    <div class="conference-item">
-                        <img src="https://subir-imagen.com/images/2025/10/26/image07c6f4407f02d2f1.md.png"
-                            alt="Cami dando una charla sobre IA" class="conference-img"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x300/1a1a1a/00CED1?text=AI+Talk';">
-                        <div class="conference-label" data-translate-key="porcettv">PorcelTv</div>
-                    </div>
-
-                    <div class="conference-item">
-                        <img src="https://subir-imagen.com/images/2025/10/26/image61fbcaf38c6cec93.md.png"
-                            alt="Cami dando una charla sobre IA" class="conference-img"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x300/1a1a1a/00CED1?text=AI+Talk';">
-                        <div class="conference-label" data-translate-key="talentodigitalpara">Talento Digital para Chile</div>
-                    </div>
-
-                    <div class="conference-item">
-                        <img src="https://subir-imagen.com/images/2025/11/28/image663557afa7d3aeaf.png"
-                            alt="Cami dando una charla sobre IA" class="conference-img"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x300/1a1a1a/00CED1?text=AI+Talk';">
-                        <div class="conference-label" data-translate-key="benditaIA">Bendita IA por la Teletón</div>
-                    </div>
-
-                    <div class="conference-item">
-                        <img src="https://subir-imagen.com/images/2025/11/28/imagedd3be57462a0c622.md.png"
-                            alt="Cami dando una charla sobre IA" class="conference-img"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x300/1a1a1a/00CED1?text=AI+Talk';">
-                        <div class="conference-label" data-translate-key="ponente">Ponente en UNED</div>
-                    </div>
-
-                    <div class="conference-item">
-                        <img src="https://subir-imagen.com/images/2025/11/28/image03ccef94e9b0e5ee.png"
-                            alt="Cami dando una charla sobre IA" class="conference-img"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x300/1a1a1a/00CED1?text=AI+Talk';">
-                        <div class="conference-label" data-translate-key="chia">Cámara Chilena de Inteligencia Artificial</div>
-                    </div>
-
-                    <div class="conference-item">
-                        <img src="https://subir-imagen.com/images/2025/11/28/imagec094b72c0375e09c.md.png"
-                            alt="Cami dando una charla sobre IA" class="conference-img"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x300/1a1a1a/00CED1?text=AI+Talk';">
-                        <div class="conference-label" data-translate-key="etm">Participación con CCHIA en ETM</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- CHARLAS Y FORMACIÓN -->
-        <section id="speaking" class="section container fade-in">
-            <h2 class="section-title" data-translate-key="speakingTitle">Charlas, talleres y cursos de IA</h2>
-            <p class="section-subtitle" data-translate-key="speakingSubtitle">Aprendizaje claro, demostraciones y ejercicios para aplicar la tecnología.</p>
-            <div class="services-grid speaking-grid">
-                <article class="service-card">
-                    <div class="service-icon" aria-hidden="true">🎤</div>
-                    <h3 data-translate-key="speakingTalk">Charlas para eventos y empresas</h3>
-                    <p data-translate-key="speakingTalkDesc">Ideas y ejemplos para entender la IA y descubrir cómo incorporarla al trabajo.</p>
-                </article>
-                <article class="service-card">
-                    <div class="service-icon" aria-hidden="true">💡</div>
-                    <h3 data-translate-key="speakingWorkshop">Talleres y capacitaciones</h3>
-                    <p data-translate-key="speakingWorkshopDesc">Sesiones prácticas para equipos que quieren aprender haciendo.</p>
-                </article>
-                <article class="service-card">
-                    <div class="service-icon" aria-hidden="true">🎓</div>
-                    <h3 data-translate-key="speakingCourse">Cursos a medida</h3>
-                    <p data-translate-key="speakingCourseDesc">Contenidos adaptados al nivel y los objetivos de tu organización.</p>
-                </article>
-            </div>
-            <div class="section-actions">
-                <a href="#contact" class="cta-button primary" data-translate-key="speakingCTA">Cotizar una charla o capacitación</a>
-            </div>
-        </section>
-
-        <!-- ESTADÍSTICAS -->
-        <section id="stats" class="section container fade-in">
-            <h2 class="section-title scale-in" data-translate-key="statsTitle">Comunidad e impacto</h2>
-            <div class="stats-grid verified-stats">
-                <div class="stat-card">
-                    <div class="stat-number" data-stat-key="community">500K+</div>
-                    <div class="stat-label" data-translate-key="statsCommunity">Comunidad en redes sociales</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-stat-key="bestVideo">8.6M</div>
-                    <div class="stat-label" data-translate-key="statsBestVideo">Visualizaciones en un video del portafolio</div>
-                </div>
-            </div>
-            <p class="content-note" data-translate-key="metricsNote">Comunidad declarada en LinkedIn, revisada en octubre de 2026. Las 8,6 M de visualizaciones corresponden a un resultado registrado en el portafolio de 2025.</p>
-            <a class="text-link" href="https://www.linkedin.com/in/camilabanares/" target="_blank" rel="noopener noreferrer" data-translate-key="metricsSourceLink">Ver perfil de referencia</a>
-        </section>
-
-        <!-- CONTENIDO DESTACADO -->
-        <section id="featured-content" class="section container fade-in">
-            <h2 class="section-title scale-in" data-translate-key="featuredTitle">Contenido Destacado</h2>
-            <p class="content-note" data-translate-key="featuredNote">Selección del portafolio de 2025. Las visualizaciones reflejan los registros de ese período; puedes solicitar métricas recientes para tu campaña.</p>
-            <div class="carousel-container">
-                <div class="carousel-track">
-
-                    <!-- #1 - 8.6M views -->
-                    <div class="featured-card">
-                        <a href="https://www.instagram.com/share/BBT2ZDNwxc" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.55.16_bc83456d.md.jpg"
-                                alt="Captura de video viral de Cami sobre programación"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">8.6M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#1</div>
-                        </div>
-                    </div>
-
-                    <!-- #2 - 3.0M views (NUEVO) -->
-                    <div class="featured-card">
-                        <a href="https://www.instagram.com/camidevai/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/11/28/image.png"
-                                alt="Video del portafolio de 2025 de CamiDevAI con 3M de visualizaciones registradas"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">3.0M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#2</div>
-                        </div>
-                    </div>
-
-                    <!-- #3 - 3.3M views -->
-                    <div class="featured-card">
-                        <a href="https://vm.tiktok.com/ZMAUn335s/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/09/20/imagea1adb3755e486297.png"
-                                alt="Video viral de Cami en TikTok con 3.3M de visualizaciones"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">3.3M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#3</div>
-                            <div class="featured-platform">TikTok</div>
-                        </div>
-                    </div>
-
-                    <!-- #4 - 2.3M views -->
-                    <div class="featured-card">
-                        <a href="https://www.instagram.com/share/BAJp23snJA" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.59.35_3458ba76.md.jpg"
-                                alt="Captura de video viral de Cami con 2.3M de vistas"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">2.3M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#4</div>
-                        </div>
-                    </div>
-
-                    <!-- #5 - 1.6M views -->
-                    <div class="featured-card">
-                        <a href="https://www.facebook.com/share/r/15xV6q9mH2/?mibextid=wwXIfr" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/09/20/image.png"
-                                alt="Video viral de Cami en Facebook con 1.6M de visualizaciones"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Facebook+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">1.6M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#5</div>
-                            <div class="featured-platform">Facebook</div>
-                        </div>
-                    </div>
-
-                    <!-- #6 - 1.4M views -->
-                    <div class="featured-card">
-                        <a href="https://www.instagram.com/share/_apZ0PBS-" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.58.19_af30cf12.md.jpg"
-                                alt="Captura de video viral de Cami con 1.4M de vistas"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">1.4M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#6</div>
-                        </div>
-                    </div>
-
-                    <!-- #7 - 1.3M views -->
-                    <div class="featured-card">
-                        <a href="https://vm.tiktok.com/ZMAUno9fN/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/09/20/imaged0f431a831e56d4a.png"
-                                alt="Video viral de Cami en TikTok con 1.3M de visualizaciones"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">1.3M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#7</div>
-                            <div class="featured-platform">TikTok</div>
-                        </div>
-                    </div>
-
-                    <!-- #8 - 1.1M views (Instagram) -->
-                    <div class="featured-card">
-                        <a href="https://www.instagram.com/share/_69xybLR8" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.14.36_1c67afe5.jpg"
-                                alt="Nuevo video viral de Cami publicado el 3 de septiembre"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">1.1M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#8</div>
-                        </div>
-                    </div>
-
-                    <!-- #9 - 1.1M views (TikTok) -->
-                    <div class="featured-card">
-                        <a href="https://www.tiktok.com/@camidevai/video/7453079647580916997" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/09/20/imageff3912252be5631f.png"
-                                alt="Video viral de Cami en TikTok con 1.1M de visualizaciones"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">1.1M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#9</div>
-                            <div class="featured-platform">TikTok</div>
-                        </div>
-                    </div>
-
-                    <!-- #10 - 1.0M views -->
-                    <div class="featured-card">
-                        <a href="https://www.instagram.com/share/BAA3SnA2OV" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/09/12/Imagen-de-WhatsApp-2025-09-12-a-las-18.21.49_7d04ef28.jpg"
-                                alt="Video viral de Cami de julio con 1M de visualizaciones"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">1.0M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#10</div>
-                        </div>
-                    </div>
-
-                    <!-- #11 - 421K views -->
-                    <div class="featured-card">
-                        <a href="https://www.facebook.com/share/r/1Grbk3YudU/?mibextid=wwXIfr" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/09/20/image64fac5531aa189b6.png"
-                                alt="Video viral de Cami en Facebook con 421K de visualizaciones"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Facebook+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">421K</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#11</div>
-                            <div class="featured-platform">Facebook</div>
-                        </div>
-                    </div>
-
-                    <!-- #12 - 406K views -->
-                    <div class="featured-card">
-                        <a href="https://www.facebook.com/share/r/167CHGdMYx/?mibextid=wwXIfr" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/09/20/imagec4b7dd2debe7bc71.png"
-                                alt="Video viral de Cami en Facebook con 406K de visualizaciones"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Facebook+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">406K</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#12</div>
-                            <div class="featured-platform">Facebook</div>
-                        </div>
-                    </div>
-
-                    <!-- DUPLICADOS PARA EFECTO INFINITO -->
-                    <!-- Duplicado #1 - 8.6M views -->
-                    <div class="featured-card">
-                        <a href="https://www.instagram.com/share/BBT2ZDNwxc" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.55.16_bc83456d.md.jpg"
-                                alt="Captura de video viral de Cami sobre programación"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">8.6M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#1</div>
-                        </div>
-                    </div>
-
-                    <!-- Duplicado #2 - 3.0M views (NUEVO) -->
-                    <div class="featured-card">
-                        <a href="https://www.instagram.com/camidevai/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/11/28/image.png"
-                                alt="Video del portafolio de 2025 de CamiDevAI con 3M de visualizaciones registradas"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">3.0M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#2</div>
-                        </div>
-                    </div>
-
-                    <!-- Duplicado #3 - 3.3M views -->
-                    <div class="featured-card">
-                        <a href="https://vm.tiktok.com/ZMAUn335s/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/09/20/imagea1adb3755e486297.png"
-                                alt="Video viral de Cami en TikTok con 3.3M de visualizaciones"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=TikTok+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">3.3M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#3</div>
-                            <div class="featured-platform">TikTok</div>
-                        </div>
-                    </div>
-
-                    <!-- Duplicado #4 - 2.3M views -->
-                    <div class="featured-card">
-                        <a href="https://www.instagram.com/share/BAJp23snJA" target="_blank" rel="noopener noreferrer">
-                            <img src="https://subir-imagen.com/images/2025/08/31/Imagen-de-WhatsApp-2025-08-30-a-las-22.59.35_3458ba76.md.jpg"
-                                alt="Captura de video viral de Cami con 2.3M de vistas"
-                                onerror="this.onerror=null; this.src='https://placehold.co/300x450/1a1a1a/f0f0f0?text=Viral+Video';">
-                        </a>
-                        <div class="featured-info">
-                            <div class="featured-views">2.3M</div>
-                            <div class="featured-label" data-translate-key="featuredLabel">Visualizaciones</div>
-                            <div class="featured-rank">#4</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- MI AUDIENCIA -->
-        <section id="audience" class="section container fade-in">
-            <h2 class="section-title scale-in">
-                <span class="gradient-text" data-translate-key="audienceTitle">Tecnología que se puede aplicar</span>
-            </h2>
-            <p class="section-subtitle" data-translate-key="audienceSubtitle">Contenido pensado para acercar la IA al aprendizaje, la creatividad y el trabajo.</p>
-
-            <div class="audience-overview">
-                <div class="audience-demographics">
-                    <article class="demo-card">
-                        <h3 class="demo-title" data-translate-key="audiencePeopleTitle">Para personas y equipos</h3>
-                        <p class="audience-description" data-translate-key="audiencePeopleText">Profesionales, estudiantes, docentes y emprendedores que quieren incorporar herramientas digitales a su día a día.</p>
-                    </article>
-                    <article class="demo-card">
-                        <h3 class="demo-title" data-translate-key="audienceBrandsTitle">Para marcas y organizaciones</h3>
-                        <p class="audience-description" data-translate-key="audienceBrandsText">Demostraciones y contenido educativo que explican un producto y muestran sus posibilidades de uso.</p>
-                    </article>
-                </div>
-
-                <!-- Intereses y Engagement -->
-                <div class="audience-interests">
-                    <h3 class="interests-title scale-in">
-                        <span class="gradient-text" data-translate-key="audienceMainInterests">Temas que comparto</span>
-                    </h3>
-                    <div class="interests-grid">
-                        <div class="interest-tag slide-in-left">
-                            <span class="tag-icon">🤖</span>
-                            <span data-translate-key="interestAI">Inteligencia Artificial</span>
-                        </div>
-                        <div class="interest-tag scale-in">
-                            <span class="tag-icon">💻</span>
-                            <span data-translate-key="interestProgramming">Programación</span>
-                        </div>
-                        <div class="interest-tag slide-in-right">
-                            <span class="tag-icon">🚀</span>
-                            <span data-translate-key="interestStartups">Startups & Tech</span>
-                        </div>
-                        <div class="interest-tag slide-in-left">
-                            <span class="tag-icon">📱</span>
-                            <span data-translate-key="interestAppDev">Desarrollo de Apps</span>
-                        </div>
-                        <div class="interest-tag scale-in">
-                            <span class="tag-icon">🎓</span>
-                            <span data-translate-key="interestTechEducation">Educación Tech</span>
-                        </div>
-                        <div class="interest-tag slide-in-right">
-                            <span class="tag-icon">⚡</span>
-                            <span data-translate-key="interestAutomation">Automatización y Herramientas</span>
-                        </div>
-                        <div class="interest-tag slide-in-left">
-                            <span class="tag-icon">💡</span>
-                            <span data-translate-key="interestInnovation">Innovación</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Conectando a través de Plataformas -->
-                <div class="platform-connection">
-                    <h3 class="connection-title scale-in" data-translate-key="audiencePlatformConnection">Conectando a través de Plataformas</h3>
-                    <div class="connection-grid">
-                        <div class="connection-card slide-in-left">
-                            <div class="platform-header">
-                                <span class="platform-icon">📷</span>
-                                <span class="platform-name">Instagram</span>
-                            </div>
-                            <div class="platform-content">
-                                <div class="platform-quote" data-translate-key="platformInstagramQuote">"Transformando ideas complejas en contenido visual inspirador"</div>
-                                <div class="platform-focus">
-                                    <span class="focus-icon">✨</span>
-                                    <span class="focus-text" data-translate-key="platformInstagramFocus">Tutoriales y demostraciones</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="connection-card scale-in">
-                            <div class="platform-header">
-                                <span class="platform-icon">🎵</span>
-                                <span class="platform-name">TikTok</span>
-                            </div>
-                            <div class="platform-content">
-                                <div class="platform-quote" data-translate-key="platformTikTokQuote">"Educación tech que se vuelve viral y accesible"</div>
-                                <div class="platform-focus">
-                                    <span class="focus-icon">🚀</span>
-                                    <span class="focus-text" data-translate-key="platformTikTokFocus">Aprendizaje en videos breves</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="connection-card slide-in-right">
-                            <div class="platform-header">
-                                <span class="platform-icon">📘</span>
-                                <span class="platform-name">Facebook</span>
-                            </div>
-                            <div class="platform-content">
-                                <div class="platform-quote" data-translate-key="platformFacebookQuote">"Construyendo una comunidad de aprendizaje continuo"</div>
-                                <div class="platform-focus">
-                                    <span class="focus-icon">🤝</span>
-                                    <span class="focus-text" data-translate-key="platformFacebookFocus">Contenido para la comunidad</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICIOS WEB -->
-        <section id="web-services" class="section container fade-in">
-            <h2 class="section-title scale-in">
-                <span class="gradient-text" data-translate-key="webServicesTitle">Desarrollo y automatización con Informatik-AI</span>
-            </h2>
-            <p class="section-subtitle" data-translate-key="webServicesSubtitle">Soluciones digitales para los objetivos de tu negocio.</p>
-
-            <div class="services-grid">
-                <div class="service-card slide-in-left">
-                    <div class="service-icon">📱</div>
-                    <h3 data-translate-key="serviceMediaKits">Automatizaciones con IA</h3>
-                    <p data-translate-key="serviceMediaKitsDesc">Flujos de trabajo para conectar herramientas y reducir tareas repetitivas.</p>
-                    <div class="service-features">
-                        <span data-translate-key="featureResponsive">Diseño Responsivo</span>
-                        <span data-translate-key="featureCustom">Totalmente Personalizable</span>
-                        <span data-translate-key="featureProfessional">Aspecto Profesional</span>
-                    </div>
-                </div>
-
-                <div class="service-card scale-in">
-                    <div class="service-icon">🚀</div>
-                    <h3 data-translate-key="serviceLandingPages">Landing Pages</h3>
-                    <p data-translate-key="serviceLandingPagesDesc">Páginas de aterrizaje optimizadas para convertir visitantes en clientes potenciales.</p>
-                    <div class="service-features">
-                        <span data-translate-key="featureConversion">Alta Conversión</span>
-                        <span data-translate-key="featureSEO">Optimizado SEO</span>
-                        <span data-translate-key="featureFast">Carga Rápida</span>
-                    </div>
-                </div>
-
-                <div class="service-card slide-in-right">
-                    <div class="service-icon">💻</div>
-                    <h3 data-translate-key="serviceWebApps">Software y aplicaciones web</h3>
-                    <p data-translate-key="serviceWebAppsDesc">Plataformas y aplicaciones adaptadas a los procesos de tu organización.</p>
-                    <div class="service-features">
-                        <span data-translate-key="featureInteractive">Interactivo</span>
-                        <span data-translate-key="featureModern">Tecnología Moderna</span>
-                        <span data-translate-key="featureScalable">Escalable</span>
-                    </div>
-                </div>
-
-                <div class="service-card slide-in-left">
-                    <div class="service-icon">📚</div>
-                    <h3 data-translate-key="serviceEducational">Material Educativo</h3>
-                    <p data-translate-key="serviceEducationalDesc">Plataformas educativas interactivas que facilitan el aprendizaje y la enseñanza.</p>
-                    <div class="service-features">
-                        <span data-translate-key="featureEngaging">Contenido Atractivo</span>
-                        <span data-translate-key="featureAccessible">Accesible</span>
-                        <span data-translate-key="featureIntuitive">Interfaz Intuitiva</span>
-                    </div>
-                </div>
-
-                <div class="service-card scale-in">
-                    <div class="service-icon">🌐</div>
-                    <h3 data-translate-key="serviceCompleteWeb">Páginas Web Completas</h3>
-                    <p data-translate-key="serviceCompleteWebDesc">Sitios web completos con diseño moderno, funcionalidad avanzada y optimización SEO.</p>
-                    <div class="service-features">
-                        <span data-translate-key="featureFullStack">Desarrollo Completo</span>
-                        <span data-translate-key="featureOptimized">Optimizado</span>
-                        <span data-translate-key="featureMaintenance">Soporte según propuesta</span>
-                    </div>
-                </div>
-
-                <div class="service-card slide-in-right">
-                    <div class="service-icon">📝</div>
-                    <h3 data-translate-key="serviceInteractiveForms">Formularios Interactivos</h3>
-                    <p data-translate-key="serviceInteractiveFormsDesc">Formularios inteligentes con validación avanzada e integración con sistemas externos.</p>
-                    <div class="service-features">
-                        <span data-translate-key="featureValidation">Validación Inteligente</span>
-                        <span data-translate-key="featureIntegration">Integración APIs</span>
-                        <span data-translate-key="featureUserFriendly">Fácil de Usar</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="services-cta">
-                <div class="cta-content">
-                    <h3 data-translate-key="servicesCTATitle">Conversemos sobre tu proyecto</h3>
-                    <p data-translate-key="servicesCTADesc">Cuéntame qué necesitas resolver para explorar una solución con Informatik-AI.</p>
-                    <a href="#contact"
-                        class="cta-button primary">
-                        <span data-translate-key="servicesCTAButton">Consultar por un proyecto</span>
-                        <span class="cta-arrow">→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- PAQUETE DE COLABORACIÓN -->
-        <section id="package" class="section container fade-in">
-            <h2 class="section-title" data-translate-key="packageTitle">Contenido y campañas para marcas</h2>
-
-            <div class="package-container">
-                <div class="package-card">
-                    <h3 data-translate-key="packageCardTitle">Mostremos lo que tu marca puede hacer</h3>
-                    <p data-translate-key="packageCardText">Creo tutoriales, demostraciones y piezas audiovisuales para presentar productos y servicios con el estilo cercano de CamiDevAI.</p>
-
-                    <ul class="package-features">
-                        <li data-translate-key="packageInclude1">Contenido personalizado y auténtico</li>
-                        <li data-translate-key="packageInclude2">Difusión en mis canales, según la propuesta</li>
-                        <li data-translate-key="packageInclude3">Demostraciones de uso y mensajes claros</li>
-                        <li data-translate-key="packageInclude4">Reportes detallados de métricas y resultados</li>
-                    </ul>
-                </div>
-
-                <div class="automation-card">
-                    <div class="automation-header">
-                        <span class="automation-icon">🤖</span>
-                        <h3 data-translate-key="automationTitle">Automatización Inteligente</h3>
-                    </div>
-
-                    <p data-translate-key="automationDescription">Podemos incorporar respuestas automatizadas por palabra clave para facilitar el acceso a la información de tu campaña.</p>
-
-                    <div class="automation-steps">
-                        <div class="step">
-                            <span class="step-number">1</span>
-                            <div>
-                                <h4 data-translate-key="automationStep1Title">Usuario Comenta</h4>
-                                <p data-translate-key="automationStep1Desc">El usuario comenta una palabra clave específica en el video</p>
-                            </div>
-                        </div>
-
-                        <div class="step">
-                            <span class="step-number">2</span>
-                            <div>
-                                <h4 data-translate-key="automationStep2Title">Activación Automática</h4>
-                                <p data-translate-key="automationStep2Desc">El sistema detecta la palabra y activa la respuesta automática</p>
-                            </div>
-                        </div>
-
-                        <div class="step">
-                            <span class="step-number">3</span>
-                            <div>
-                                <h4 data-translate-key="automationStep3Title">Entrega del enlace</h4>
-                                <p data-translate-key="automationStep3Desc">El usuario recibe el enlace directo al destino deseado</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="automation-benefits">
-                        <span data-translate-key="automationBenefit1">Enlaces y mensajes personalizados</span>
-                        <span data-translate-key="automationBenefit2">Seguimiento de resultados</span>
-                        <span data-translate-key="automationBenefit3">Configuración según campaña</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACTO -->
-        <section id="contact" class="section container fade-in">
-            <h2 class="section-title" data-translate-key="contactTitle">¿Qué te gustaría crear conmigo?</h2>
-            <p class="section-subtitle" data-translate-key="contactIntro">Para charlas, cursos, campañas o proyectos con IA, cuéntame tu idea, el objetivo y las fechas.</p>
-            <div class="section-actions contact-options">
-                <a href="mailto:camidevai@gmail.com" class="cta-button secondary" data-translate-key="contactEmail">Contactar por correo</a>
-                <a href="https://www.linkedin.com/in/camilabanares/" target="_blank" rel="noopener noreferrer" class="cta-button secondary" data-translate-key="contactLinkedin">Conectar en LinkedIn</a>
-            </div>
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <label for="from_name" data-translate-key="formNameLabel">Tu Nombre</label>
-                    <input type="text" name="from_name" id="from_name" required>
-                </div>
-                <div class="form-group">
-                    <label for="brand_name" data-translate-key="formBrandLabel">Marca u organización</label>
-                    <input type="text" name="brand_name" id="brand_name" required>
-                </div>
-                <div class="form-group">
-                    <label for="reply_to" data-translate-key="formEmailLabel">Tu Email</label>
-                    <input type="email" name="reply_to" id="reply_to" required>
-                </div>
-                <div class="form-group">
-                    <label for="message" data-translate-key="formMessageLabel">Cuéntame sobre tu proyecto</label>
-                    <textarea name="message" id="message" required></textarea>
-                </div>
-                <button type="submit" class="submit-button" id="submit-btn"
-                    data-translate-key="formSubmitButton">Enviar Propuesta</button>
-                <div id="form-message" role="alert"></div>
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>
-            <span data-translate-key="footerText">&copy; 2026 CamiDevAI · Camila Daniela Bañares Carrasco | Contacto:</span>
-            <a href="mailto:camidevai@gmail.com">camidevai@gmail.com</a>
-        </p>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="assets/js/config.js"></script>
-    <script src="assets/js/translations.js"></script>
-    <script src="assets/js/carousel.js"></script>
-    <script src="assets/js/floating-emojis.js"></script>
-    <script src="assets/js/main.js"></script>
+      </div>
+    </section>
+  </main>
+  <footer class="container site-footer">
+    <div><p  data-translate-key="footerLine">© 2026 CamiDevAI · Camila Daniela Bañares Carrasco</p><p class="footer-tagline" data-translate-key="footerTagline">Tecnología, comunicación y creatividad.</p></div>
+    <div class="social-links" aria-label="Redes sociales"><a href="https://www.instagram.com/camidevai/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/camilabanares/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://www.tiktok.com/@camidevai" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/profile.php?id=61564523003680" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a></div>
+  </footer>
 </body>
-
 </html>
