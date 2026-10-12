@@ -42,3 +42,7 @@ El contenido anterior está conservado en `CONFIG.historicalContent` para refere
 
 Se mantiene la configuración existente del formulario de EmailJS. El correo y LinkedIn
 siguen disponibles como contacto directo. La revisión del sitio no envía correos reales.
+
+## Vista previa
+
+![Diseño claro de CamiDevAI](docs/mediakit-preview-2026-10-12.jpg)
