@@ -100,6 +100,35 @@ nav a:hover { color: var(--accent); }
 .performance-views span { font-size: 10px; color: var(--muted); }
 .performance-copy .text-link { font-size: 11px; }
 .performance-note { margin-top: 22px; font-size: 11px; line-height: 1.8; color: var(--muted); max-width: 760px; }
+.ranking-panel[hidden] { display: none; }
+.ranking-panel > h3 { font-size: 18px; line-height: 1.4; font-weight: 600; }
+.ranking-scope { color: var(--muted); font-size: 12px; margin-block: 10px 24px; max-width: 760px; }
+.ranking-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; list-style: none; margin: 0; padding: 0; }
+.ranking-card { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 16px; padding: 24px; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; }
+.ranking-number { color: var(--accent); font-size: 12px; font-weight: 600; padding-top: 3px; }
+.ranking-body { display: flex; flex-direction: column; align-items: flex-start; }
+.ranking-body h4 { font-size: 16px; line-height: 1.45; font-weight: 500; letter-spacing: -.02em; }
+.ranking-meta { font-size: 10px; color: var(--muted); margin-top: 7px; }
+.ranking-value { display: flex; flex-wrap: wrap; gap: 9px; align-items: baseline; margin-block: 16px 8px; }
+.ranking-value strong { font-size: 36px; line-height: 1.2; font-weight: 600; letter-spacing: -.055em; color: var(--accent-dark); }
+.ranking-value > span { font-size: 10px; color: var(--muted); }
+.ranking-note { font-size: 11px; color: var(--muted); line-height: 1.75; }
+.ranking-body .text-link { margin-top: auto; padding-top: 18px; font-size: 11px; }
+.ranking-extras { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 26px; }
+.ranking-extras h4 { font-size: 13px; font-weight: 500; margin-bottom: 10px; letter-spacing: 0; }
+.ranking-extras p { font-size: 12px; color: var(--muted); line-height: 1.8; }
+.ranking-archive { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 22px; }
+.ranking-archive > summary { color: var(--accent); font-size: 12px; font-weight: 500; cursor: pointer; }
+.ranking-archive .performance-note { margin-block: 16px 24px; }
+.ranking-archive h4 { font-size: 14px; font-weight: 500; margin-block: 24px 14px; }
+@media (max-width: 760px) {
+  .ranking-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .ranking-card { padding: 20px; gap: 10px; grid-template-columns: 22px minmax(0, 1fr); }
+  .ranking-body h4 { font-size: 15px; }
+  .ranking-value strong { font-size: 32px; }
+}
 @media (max-width: 760px) {
   .performance-grid { grid-template-columns: 1fr; }
   .performance-card { grid-template-columns: 84px minmax(0, 1fr); gap: 18px; }

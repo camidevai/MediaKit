@@ -5,27 +5,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.getElementById('submit-btn');
     const submitLabel = submitButton.querySelector('[data-translate-key]');
     const formMessage = document.getElementById('form-message');
-    const performanceFilters = document.querySelectorAll('[data-performance-filter]');
-    const performanceCards = document.querySelectorAll('[data-performance-platform]');
+    const rankingFilters = document.querySelectorAll('[data-ranking-filter]');
+    const rankingPanels = document.querySelectorAll('[data-ranking-group]');
 
-    function filterPerformance(platform) {
-        performanceCards.forEach(card => {
-            card.hidden = platform !== 'all' && card.dataset.performancePlatform !== platform;
+    function filterRanking(group) {
+        rankingPanels.forEach(panel => {
+            panel.hidden = panel.dataset.rankingGroup !== group;
         });
-        performanceFilters.forEach(button => {
-            button.setAttribute('aria-pressed', String(button.dataset.performanceFilter === platform));
+        rankingFilters.forEach(button => {
+            button.setAttribute('aria-pressed', String(button.dataset.rankingFilter === group));
         });
     }
 
-    performanceFilters.forEach(button => {
-        button.addEventListener('click', () => filterPerformance(button.dataset.performanceFilter));
+    rankingFilters.forEach(button => {
+        button.addEventListener('click', () => filterRanking(button.dataset.rankingFilter));
     });
-    filterPerformance('Instagram');
-
-    document.querySelectorAll('[data-stat-key]').forEach(element => {
-        const value = CONFIG.stats[element.dataset.statKey];
-        if (value) element.textContent = value;
-    });
+    filterRanking('views');
 
     function setLanguage(language) {
         if (!translations[language]) return;
@@ -33,12 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.lang = language;
         document.title = translations[language].docTitle;
         document.querySelector('meta[name="description"]').content = translations[language].pageDescription;
+        document.querySelectorAll('[data-stat-key]').forEach(element => {
+            const value = CONFIG.stats[element.dataset.statKey];
+            if (value) element.textContent = typeof value === 'object' ? value[language] : value;
+        });
         document.querySelectorAll('[data-translate-key]').forEach(element => {
             const value = translations[language][element.dataset.translateKey];
             if (value) element.textContent = value;
         });
         document.querySelectorAll('[data-alt-key]').forEach(element => {
             element.alt = translations[language][element.dataset.altKey] + ' — CamiDevAI';
+        });
+        document.querySelectorAll('[data-aria-label-key]').forEach(element => {
+            element.setAttribute('aria-label', translations[language][element.dataset.ariaLabelKey]);
         });
         for (const [code, button] of Object.entries(languageButtons)) {
             button.classList.toggle('active', code === language);

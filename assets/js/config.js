@@ -6,16 +6,24 @@ const CONFIG = {
     },
     "stats": {
         "community": "500K+",
-        "bestVideo": "8.6M",
+        "bestVideo": {
+            "es": "41,5M",
+            "en": "41.5M"
+        },
         "instagram": "287K"
     },
     "statsSources": {
         "community": "https://www.linkedin.com/in/camilabanares/",
         "communityReviewedAt": "2026-10-12",
-        "bestVideoPeriod": "2025",
+        "bestVideoPeriod": "All-time account result supplied on 2026-10-12",
         "instagram": "https://www.instagram.com/camidevai/",
         "instagramReviewedAt": "2026-10-12",
-        "instagramPrecision": "Rounded public profile count: 287 mil seguidores."
+        "instagramPrecision": "Rounded public profile count: 287 mil seguidores.",
+        "bestVideoSource": "content/sources/rankings-2026-10-12.md",
+        "bestVideoSourceType": "owner-provided",
+        "bestVideoMetricScope": "Instagram displayed views may include Facebook",
+        "bestVideoReviewedAt": "2026-10-12",
+        "bestVideoIndependentlyVerified": false
     },
     "profile": {
         "name": "Camila Daniela Bañares Carrasco",
@@ -276,6 +284,335 @@ const CONFIG = {
     ],
     "performanceContent": [
         {
+            "id": "baby-shower",
+            "url": "https://www.instagram.com/reel/DURkIdSgM8h/",
+            "title": {
+                "es": "Juego del baby shower",
+                "en": "Baby shower game"
+            },
+            "date": "2026-02-02",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 41500000,
+                "label": {
+                    "es": "41,5M",
+                    "en": "41.5M"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            },
+            "collaboration": {
+                "brand": "@kidstorechile",
+                "paidConfirmed": null
+            },
+            "note": {
+                "es": "1,19M de me gusta · Colaboración con @kidstorechile.",
+                "en": "1.19M likes · Collaboration with @kidstorechile."
+            },
+            "likes": 1190000
+        },
+        {
+            "id": "llamacoder",
+            "url": "https://www.instagram.com/reel/DCCkYTjSBqL/",
+            "title": {
+                "es": "LlamaCoder: crea apps sin saber programar",
+                "en": "LlamaCoder: build apps without coding"
+            },
+            "date": "2024-11-06",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 8700000,
+                "label": {
+                    "es": "8,7M",
+                    "en": "8.7M"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            }
+        },
+        {
+            "id": "cuerpo",
+            "url": "https://www.instagram.com/reel/DRKJxNoAI0s/",
+            "title": {
+                "es": "Ver tu cuerpo desde adentro",
+                "en": "See inside your body"
+            },
+            "date": "2025-11-17",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 3800000,
+                "label": {
+                    "es": "3,8M",
+                    "en": "3.8M"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            }
+        },
+        {
+            "id": "sheleads",
+            "url": "https://www.instagram.com/reel/DLJUGeFtdAs/",
+            "title": {
+                "es": "Feria SheLeads para mujeres latinas",
+                "en": "SheLeads fair for Latin American women"
+            },
+            "date": "2025-06-20",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 2300000,
+                "label": {
+                    "es": "2,3M",
+                    "en": "2.3M"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            },
+            "collaboration": {
+                "brand": "@lapieza.io",
+                "paidConfirmed": null
+            },
+            "note": {
+                "es": "Colaboración con @lapieza.io.",
+                "en": "Collaboration with @lapieza.io."
+            }
+        },
+        {
+            "id": "cursos",
+            "url": "https://www.instagram.com/reel/DPQv-qPABQH/",
+            "title": {
+                "es": "Cursos 100% gratis con certificado",
+                "en": "Free courses with certificates"
+            },
+            "date": "2025-10-01",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 2100000,
+                "label": {
+                    "es": "2,1M",
+                    "en": "2.1M"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            }
+        },
+        {
+            "id": "canva",
+            "url": "https://www.instagram.com/reel/DcKEDiHR7E_/",
+            "title": {
+                "es": "ChatGPT + Canva",
+                "en": "ChatGPT + Canva"
+            },
+            "date": "2026-08-17",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 1350000,
+                "label": {
+                    "es": "1,35M",
+                    "en": "1.35M"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            },
+            "followers": {
+                "value": 3300,
+                "approximate": true,
+                "scope": "instagram_only",
+                "rankingPeriod": "Reels published since late July 2026"
+            },
+            "instagramViews": 947000
+        },
+        {
+            "id": "magnar",
+            "url": "https://www.instagram.com/reel/DbpRYOggVQB/",
+            "title": {
+                "es": "¿Eres abogado? · Magnar.ai",
+                "en": "Are you a lawyer? · Magnar.ai"
+            },
+            "date": "2026-08-05",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "followers": {
+                "value": 1228,
+                "approximate": false,
+                "scope": "instagram_only",
+                "rankingPeriod": "Reels published since late July 2026"
+            }
+        },
+        {
+            "id": "reel-septiembre-6",
+            "url": "https://www.instagram.com/reel/Dc8vn52RPaD/",
+            "title": {
+                "es": "Reel del 6 de septiembre",
+                "en": "September 6 Reel"
+            },
+            "date": "2026-09-06",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "followers": {
+                "value": 1100,
+                "approximate": true,
+                "scope": "instagram_only",
+                "rankingPeriod": "Reels published since late July 2026"
+            }
+        },
+        {
+            "id": "reel-septiembre-17",
+            "url": "https://www.instagram.com/reel/DdY_02BR9bH/",
+            "title": {
+                "es": "Reel del 17 de septiembre",
+                "en": "September 17 Reel"
+            },
+            "date": "2026-09-17",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "followers": {
+                "value": 945,
+                "approximate": false,
+                "scope": "instagram_only",
+                "rankingPeriod": "Reels published since late July 2026"
+            }
+        },
+        {
+            "id": "matematicas",
+            "url": "https://www.instagram.com/reel/DbO4L2qR2lr/",
+            "title": {
+                "es": "Matemáticas ❤️",
+                "en": "Mathematics ❤️"
+            },
+            "date": "2026-07-25",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "followers": {
+                "value": 726,
+                "approximate": false,
+                "scope": "instagram_only",
+                "rankingPeriod": "Reels published since late July 2026"
+            }
+        },
+        {
+            "id": "claseflix",
+            "url": "https://www.instagram.com/reel/DOKCjmLgIh1/",
+            "title": {
+                "es": "Comenta claseflix",
+                "en": "Comment claseflix"
+            },
+            "date": "2025-09-03",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 1800000,
+                "label": {
+                    "es": "1,8M",
+                    "en": "1.8M"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            },
+            "collaboration": {
+                "brand": "ClaseFlix",
+                "paidConfirmed": null
+            },
+            "note": {
+                "es": "18.931 comentarios.",
+                "en": "18,931 comments."
+            },
+            "comments": 18931
+        },
+        {
+            "id": "apob-comenta",
+            "url": "https://www.instagram.com/reel/DaoV-raAUok/",
+            "title": {
+                "es": "Comenta APOB",
+                "en": "Comment APOB"
+            },
+            "date": "2026-07-10",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 1070000,
+                "label": {
+                    "es": "1,07M",
+                    "en": "1.07M"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            },
+            "collaboration": {
+                "brand": "APOB",
+                "paidConfirmed": null
+            }
+        },
+        {
+            "id": "apob-patio",
+            "url": "https://www.instagram.com/reel/DTT4NDKgGWd/",
+            "title": {
+                "es": "Video del patio",
+                "en": "Patio video"
+            },
+            "date": "2026-01-10",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 627000,
+                "label": {
+                    "es": "627K",
+                    "en": "627K"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            },
+            "collaboration": {
+                "brand": "APOB",
+                "paidConfirmed": null
+            }
+        },
+        {
+            "id": "onlyoffice",
+            "url": "https://www.instagram.com/reel/DT_QqYAEiJ7/",
+            "title": {
+                "es": "ONLYOFFICE",
+                "en": "ONLYOFFICE"
+            },
+            "date": "2026-01-26",
+            "source": "owner-provided",
+            "metricsAsOf": "2026-10-12",
+            "independentlyVerifiedInInsights": false,
+            "views": {
+                "value": 379000,
+                "label": {
+                    "es": "379K",
+                    "en": "379K"
+                },
+                "scope": "instagram_displayed_may_include_facebook",
+                "precision": "reported_rounded"
+            },
+            "collaboration": {
+                "brand": "ONLYOFFICE",
+                "paidConfirmed": null
+            }
+        }
+    ],
+    "archivedPerformanceContent": [
+        {
             "id": "instagram-llamacoder",
             "platform": "Instagram",
             "url": "https://www.instagram.com/share/BBT2ZDNwxc",
@@ -507,6 +844,45 @@ const CONFIG = {
             },
             "imageSource": "https://subir-imagen.com/images/2025/09/20/imagec4b7dd2debe7bc71.png",
             "verification": "Preserved original portfolio link, image and view count. Not independently reverified on the platform."
+        }
+    ],
+    "performanceRankings": [
+        {
+            "id": "views",
+            "metric": "views",
+            "scope": "All-time account ranking supplied by the owner; Instagram displayed totals may include Facebook.",
+            "videoIds": [
+                "baby-shower",
+                "llamacoder",
+                "cuerpo",
+                "sheleads",
+                "cursos"
+            ]
+        },
+        {
+            "id": "followers",
+            "metric": "followers",
+            "scope": "Instagram only; Reels published since late July 2026.",
+            "videoIds": [
+                "canva",
+                "magnar",
+                "reel-septiembre-6",
+                "reel-septiembre-17",
+                "matematicas"
+            ]
+        },
+        {
+            "id": "brands",
+            "metric": "views",
+            "scope": "Selected brand collaborations supplied by the owner; paid status is not established.",
+            "videoIds": [
+                "baby-shower",
+                "sheleads",
+                "claseflix",
+                "apob-comenta",
+                "apob-patio",
+                "onlyoffice"
+            ]
         }
     ]
 };
