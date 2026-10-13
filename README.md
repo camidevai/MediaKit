@@ -85,4 +85,6 @@ siguen disponibles como contacto directo. La revisión del sitio no envía corre
 
 ## Vista previa
 
+![Portada actualizada con el retrato de CamiDevAI](docs/mediakit-portrait-2026-10-12.jpg)
+
 ![Rankings actualizados de CamiDevAI](docs/mediakit-rankings-2026-10-12.jpg)
