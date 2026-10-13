@@ -29,7 +29,11 @@ const CONFIG = {
         "name": "Camila Daniela Bañares Carrasco",
         "brand": "CamiDevAI",
         "linkedin": "https://www.linkedin.com/in/camilabanares/",
-        "instagram": "https://www.instagram.com/camidevai/"
+        "instagram": "https://www.instagram.com/camidevai/",
+        "servicesPage": "https://camidevai.github.io/camidevai-prochechando/",
+        "meetingUrl": "https://calendar.app.google/ZV6dGDV6JYxfs5sZ7",
+        "informatikRole": "Cofounder and CMO",
+        "portraitSource": "Photo supplied by the owner on 2026-10-12."
     },
     "featuredContent": [
         {
@@ -190,7 +194,7 @@ const CONFIG = {
         }
     ],
     "images": {
-        "profile": "assets/images/cami-profile.jpg",
+        "profile": "assets/images/camila-banares-portrait.jpg",
         "conference": [
             "https://subir-imagen.com/images/2025/08/30/Captura-de-pantalla-2025-08-30-221353.md.png",
             "https://subir-imagen.com/images/2025/08/30/Imagen-de-WhatsApp-2025-08-30-a-las-22.17.04_d70ab43c.md.jpg",
@@ -884,5 +888,52 @@ const CONFIG = {
                 "onlyoffice"
             ]
         }
-    ]
+    ],
+    "services": [
+        {
+            "id": "speaking",
+            "title": {
+                "es": "Charlas y conferencias",
+                "en": "Talks and conferences"
+            },
+            "source": "https://camidevai.github.io/camidevai-prochechando/"
+        },
+        {
+            "id": "training",
+            "title": {
+                "es": "Cursos y talleres de IA",
+                "en": "AI courses and workshops"
+            },
+            "source": "https://camidevai.github.io/camidevai-prochechando/"
+        },
+        {
+            "id": "package",
+            "title": {
+                "es": "Videos para marcas y lugares",
+                "en": "Videos for brands and places"
+            },
+            "source": "https://camidevai.github.io/camidevai-prochechando/"
+        },
+        {
+            "id": "web-services",
+            "title": {
+                "es": "Proyectos con Informatik-AI",
+                "en": "Projects with Informatik-AI"
+            },
+            "source": "https://camidevai.github.io/camidevai-prochechando/"
+        }
+    ],
+    "professionalSources": {
+        "reviewedAt": "2026-10-12",
+        "page": "https://camidevai.github.io/camidevai-prochechando/",
+        "repository": "camidevai/camidevai-prochechando",
+        "commit": "9a91c1fc3e32ee68396c64c01370791f68d4049f",
+        "files": [
+            "src/App.jsx",
+            "src/CamiLanding.jsx",
+            "src/Team.jsx",
+            "src/Servicios.jsx",
+            "src/Alianzas.jsx"
+        ]
+    }
 };

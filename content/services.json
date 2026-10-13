@@ -1,0 +1,66 @@
+{
+  "reviewedAt": "2026-10-12",
+  "timezone": "America/Santiago",
+  "source": {
+    "reviewedAt": "2026-10-12",
+    "page": "https://camidevai.github.io/camidevai-prochechando/",
+    "repository": "camidevai/camidevai-prochechando",
+    "commit": "9a91c1fc3e32ee68396c64c01370791f68d4049f",
+    "files": [
+      "src/App.jsx",
+      "src/CamiLanding.jsx",
+      "src/Team.jsx",
+      "src/Servicios.jsx",
+      "src/Alianzas.jsx"
+    ]
+  },
+  "portrait": {
+    "file": "assets/images/camila-banares-portrait.jpg",
+    "source": "Uploaded by the owner",
+    "originalFilename": "1791462946725.jpg",
+    "unchangedImageBytes": true,
+    "dimensions": [
+      400,
+      400
+    ]
+  },
+  "profileUpdates": [
+    "Cofounder and CMO of Informatik-AI",
+    "Leads marketing, brand and communication"
+  ],
+  "services": [
+    {
+      "id": "speaking",
+      "title": {
+        "es": "Charlas y conferencias",
+        "en": "Talks and conferences"
+      },
+      "source": "https://camidevai.github.io/camidevai-prochechando/"
+    },
+    {
+      "id": "training",
+      "title": {
+        "es": "Cursos y talleres de IA",
+        "en": "AI courses and workshops"
+      },
+      "source": "https://camidevai.github.io/camidevai-prochechando/"
+    },
+    {
+      "id": "package",
+      "title": {
+        "es": "Videos para marcas y lugares",
+        "en": "Videos for brands and places"
+      },
+      "source": "https://camidevai.github.io/camidevai-prochechando/"
+    },
+    {
+      "id": "web-services",
+      "title": {
+        "es": "Proyectos con Informatik-AI",
+        "en": "Projects with Informatik-AI"
+      },
+      "source": "https://camidevai.github.io/camidevai-prochechando/"
+    }
+  ],
+  "meetingUrl": "https://calendar.app.google/ZV6dGDV6JYxfs5sZ7"
+}

@@ -11,6 +11,7 @@ con español e inglés, publicaciones verificadas, servicios, trayectoria y cont
 - `assets/js/translations.js`: textos en ambos idiomas.
 - `assets/js/main.js`: selección de idioma y formulario de contacto.
 - `content/featured.json`: publicaciones recientes y fechas de revisión.
+- `content/services.json`: perfil, servicios y fotografía incorporados desde la página de CamiDevAI.
 - `content/performance.json`: rankings actuales proporcionados por la titular y sus alcances.
 - `content/performance-2025.json`: los once registros históricos conservados.
 - `content/sources/rankings-2026-10-12.md`: cifras, enlaces y notas originales compartidos por CamiDevAI.
@@ -40,6 +41,19 @@ temporales del CDN de Instagram. Las portadas conservan su imagen original.
 
 La comunidad de **500K+** es un dato declarado en LinkedIn. Instagram mostró
 **287 mil seguidores**, una cifra pública redondeada.
+
+## Perfil, servicios y retrato
+
+La foto `1791462946725.jpg`, adjuntada por CamiDevAI, aparece como retrato principal
+y como imagen para compartir el enlace. Se conservan sus bytes originales.
+
+La página https://camidevai.github.io/camidevai-prochechando/ aporta cuatro formas
+de colaboración: charlas y conferencias; cursos y talleres; videos para marcas,
+lugares y experiencias; y proyectos con el equipo de Informatik-AI. El perfil
+precisa el rol de **cofundadora y CMO**, a cargo de marketing, marca y comunicación.
+La fuente y el commit están documentados en `content/sources/services-2026-10-12.md`.
+El botón de contacto enlaza al calendario público de la página de referencia.
+No se crean reservas ni se envían mensajes durante la revisión.
 
 ## Rankings proporcionados por la titular
 

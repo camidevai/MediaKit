@@ -139,7 +139,9 @@ nav a:hover { color: var(--accent); }
   .performance-views strong { font-size: 27px; }
 }
 .services-section { background: #f5f2fa; border-block: 1px solid var(--line); }
-.services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
+.services-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; }
+.services-heading > .text-link { flex-shrink: 0; }
+.services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
 .service-card { background: var(--paper); border-radius: 14px; border: 1px solid var(--line); padding: 30px; display: flex; flex-direction: column; }
 .service-number { color: var(--accent); font-size: 11px; font-weight: 600; margin-bottom: 27px; }
 .service-card h3 { font-size: 22px; font-weight: 600; line-height: 1.3; margin-bottom: 15px; }
@@ -207,6 +209,8 @@ nav a:hover { color: var(--accent); }
   .section-heading > .text-link { margin-top: 20px; }
   .featured-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   .services-grid { grid-template-columns: 1fr; gap: 16px; }
+  .services-heading { display: block; }
+  .services-heading > .text-link { margin-top: 20px; }
   .service-number { margin-bottom: 17px; }
   .service-card { padding: 28px; }
   .about-layout, .contact-layout { grid-template-columns: 1fr; gap: 38px; }
@@ -235,9 +239,9 @@ nav a:hover { color: var(--accent); }
   *, *::before, *::after { transition-duration: .01ms !important; animation: none !important; }
 }
 
-/* The public profile portrait is 150px: retain a natural, crisp display size. */
-.hero-portrait { padding: 28px 24px; background: #f7f3fb; border: 1px solid var(--line); border-radius: 22px; }
-.portrait-frame { width: 166px; margin-inline: auto; border-radius: 50%; border-width: 8px; box-shadow: none; }
+/* Display the owner-supplied portrait at a crisp size below its 400px resolution. */
+.hero-portrait { width: min(100%, 320px); }
+.portrait-frame { width: 100%; margin-inline: auto; border-radius: 22px; border-width: 7px; box-shadow: 0 12px 36px #321c4a0d; }
 .brand-roles span { font-size: 11px; }
 .metric span { font-size: 12px; }
 .form-group label { font-size: 12px; }
