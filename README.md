@@ -71,4 +71,4 @@ siguen disponibles como contacto directo. La revisión del sitio no envía corre
 
 ## Vista previa
 
-![Diseño claro de CamiDevAI](docs/mediakit-preview-2026-10-12.jpg)
+![Rankings actualizados de CamiDevAI](docs/mediakit-rankings-2026-10-12.jpg)
