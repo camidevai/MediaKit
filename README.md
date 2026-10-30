@@ -104,3 +104,21 @@ No se modificaron las cifras existentes ni sus fechas y notas metodológicas
 son oportunidades ofrecidas a marcas, no afirmaciones sobre contratos concretos.
 La política editorial distingue la prueba de productos de un respaldo comercial
 obligatorio e invita a identificar las campañas pagadas.
+
+## Instagram Insights recibidos el 29 de octubre de 2026
+
+Se incluyó una sección de audiencia y rendimiento reciente enfocada a agencias
+tecnológicas. Los datos provienen de seis capturas de Instagram Insights aportadas
+por la titular. Se documentan de forma estructurada en
+`content/insights-2026-10-29.json`; las capturas originales permanecen privadas.
+
+- Últimos 30 días: 3.105.291 reproducciones; 759.128 espectadores; +2.292 seguidores netos.
+- Principales países: Chile 44,7%; México 11,0%; Argentina 7,9%; Venezuela 7,8%; Colombia 6,4%.
+- Género: hombres 60,3%; mujeres 39,7%.
+- Edad: 25–34 (21,5%), 35–44 (36,3%) y 45–54 (25,2%); suma 25–54 = 83,0%.
+- Idioma español: 97,6%.
+
+La gráfica de reproducciones de Instagram expresa los últimos 30 días y las
+cifras demográficas proceden de la pestaña Público. La sección incluye advertencia
+de fuente y evita extrapolar datos de Instagram a todas las redes. Las cifras
+históricas existentes se conservan con su fuente y fecha de referencia anteriores.
