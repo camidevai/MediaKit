@@ -1,0 +1,56 @@
+{
+  "updatedAt": "2026-10-29",
+  "timezone": "America/Santiago",
+  "source": {
+    "type": "owner-provided",
+    "platform": "Instagram Insights",
+    "format": "six screenshots shared directly by CamiDevAI",
+    "publicScreenshots": false,
+    "independentlyVerified": false,
+    "periodLabel": "Last 30 days (per Instagram Insights UI)",
+    "notes": "The audience breakdown may use Instagram's own reporting window; screenshots show no precise date bounds."
+  },
+  "last30Days": {
+    "views": 3105291,
+    "viewers": 759128,
+    "netFollowers": 2292
+  },
+  "audience": {
+    "countryPercent": {
+      "Chile": 44.7,
+      "Mexico": 11,
+      "Argentina": 7.9,
+      "Venezuela": 7.8,
+      "Colombia": 6.4
+    },
+    "languagePercent": {
+      "Spanish": 97.6,
+      "English": 1.1,
+      "Portuguese": 0.6,
+      "Italian": 0.2
+    },
+    "genderPercent": {
+      "men": 60.3,
+      "women": 39.7
+    },
+    "agePercent": {
+      "13-17": 0.5,
+      "18-24": 3,
+      "25-34": 21.5,
+      "35-44": 36.3,
+      "45-54": 25.2,
+      "55-64": 9.9,
+      "65+": 3.6
+    }
+  },
+  "derived": {
+    "age25to54Percent": 83,
+    "countriesListedTotalPercent": 77.8
+  },
+  "activityNotes": {
+    "timezoneShown": "CLST",
+    "mondayPeak": "18:00–21:00",
+    "tuesdayPeak": "18:00–00:00",
+    "sundayChart": "Bars highest from roughly 15:00–21:00; selected day Sunday"
+  }
+}
