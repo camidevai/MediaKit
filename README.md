@@ -88,3 +88,19 @@ siguen disponibles como contacto directo. La revisión del sitio no envía corre
 ![Portada actualizada con el retrato de CamiDevAI](docs/mediakit-portrait-2026-10-12.jpg)
 
 ![Rankings actualizados de CamiDevAI](docs/mediakit-rankings-2026-10-12.jpg)
+
+## Revisión comercial del 29 de octubre de 2026
+
+El media kit se reorientó a equipos de marketing, agencias de PR y marcas tecnológicas.
+Se incorporaron una apertura orientada a campañas y cuatro modalidades de colaboración:
+pruebas y préstamos de productos, cobertura de lanzamientos y eventos, campañas pagadas,
+y embajadurías. Se añadieron tarjetas de los cuatro perfiles públicos aportados por Camila:
+Instagram, TikTok, Facebook y LinkedIn; se corrigió el destino del enlace de Facebook.
+La portada y el contacto facilitan ahora las propuestas comerciales, y se mantienen
+las traducciones ES/EN y la accesibilidad de la navegación.
+
+No se modificaron las cifras existentes ni sus fechas y notas metodológicas
+(12 de octubre de 2026), al no contar con nuevos Insights. Las modalidades nuevas
+son oportunidades ofrecidas a marcas, no afirmaciones sobre contratos concretos.
+La política editorial distingue la prueba de productos de un respaldo comercial
+obligatorio e invita a identificar las campañas pagadas.
